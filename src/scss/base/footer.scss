@@ -1,0 +1,73 @@
+@import "vars";
+
+.footer {
+    &__content {
+        width: 88%;
+        margin: 35px auto 0;
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        width: 87%;
+        padding-left: 9px;
+    }
+
+    &__navigation {
+        margin-top: 5px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__items {
+        letter-spacing: 1.9px;
+        display: flex;
+        gap: 40px;
+    }
+
+    &__item {
+    }
+
+    &__language {
+        margin-left: 78px;
+
+        &::after {
+            content: "";
+        }
+    }
+
+    &__language-option {
+    }
+
+    &__button-block {
+        display: flex;
+        align-items: center;
+        gap: 16px;
+    }
+
+    &__button {
+    }
+
+    &__copyright {
+        margin: 2px 0 0 5px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 89%;
+    }
+
+    &__logo {
+        width: 257px;
+    }
+
+    &__svg {
+    }
+
+    &__text {
+        padding: 10px 0 0 0;
+        color: $textSupportText;
+        font-size: 20px;
+        font-weight: 500;
+        width: 68%;
+    }
+}

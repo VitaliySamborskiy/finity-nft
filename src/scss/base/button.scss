@@ -1,0 +1,21 @@
+@import "vars";
+
+.link {
+    font-weight: 500;
+
+    &:hover {
+        color: $games;
+    }
+
+    &-button {
+        padding: 18px 38px;
+        border-radius: 50px;
+        border: 2px solid $mainColorText;
+
+        &-colors {
+            padding: 18px 48px;
+            background: $mainColorGradient;
+            border-radius: 50px;
+        }
+    }
+}
