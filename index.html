@@ -8,11 +8,16 @@
         <title>Vite App</title>
     </head>
     <body>
-        <div>
-            <main></main>
+        <div class="wrapper">
+            <load src="src/components/base/header.html" />
+            <main class="main">
+                <load src="src/components/main-page/main-section.html" />
+                <load src="src/components/main-page/Ideas-section.html" />
+                <load src="src/components/main-page/benefits-section.html" />
+            </main>
+            <load src="src/components/base/footer.html" />
+            <load src="src/components/base/sprite.html" />
         </div>
-        <load src="src/components/base/footer.html" />
-        <load src="src/components/base/sprite.html" />
         <script type="module" src="/src/js/main.js"></script>
     </body>
 </html>

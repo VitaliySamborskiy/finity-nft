@@ -8,14 +8,24 @@
     }
 
     &-button {
-        padding: 18px 38px;
+        padding: 16px 32px;
         border-radius: 50px;
         border: 2px solid $mainColorText;
 
+        @include breakpoints(sm) {
+            font-size: 19px;
+            padding: 17px 19px;
+        }
+
         &-colors {
-            padding: 18px 48px;
+            padding: 16px 42px;
             background: $mainColorGradient;
             border-radius: 50px;
+
+            @include breakpoints(sm) {
+                font-size: 19px;
+                padding: 18px 22px;
+            }
         }
     }
 }

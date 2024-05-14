@@ -1,13 +1,10 @@
-$backgroundWebsite: #0d0d0d;
+$backgroundWebsite: #000000;
+$backgroundBurger: rgba(47, 47, 47, 0.9);
+$backgroundItemsBurger: rgb(47, 47, 47);
 $mainColorText: #fff;
 $textSupportText: #959595;
 $marketplace: linear-gradient(145deg, #ff6c56 0%, #ff9344 100%);
 $games: linear-gradient(146deg, #7673ff 0%, #42f4ff 100%);
 $grant: linear-gradient(149deg, #b2ff0f 0%, #76ffef 100%);
-$mainColorGradient: linear-gradient(
-    144deg,
-    #86affe 0%,
-    #a57aff 50.78%,
-    #fb84ff 100%
-);
+$mainColorGradient: linear-gradient(144deg, #86affe 0%, #a57aff 50.78%, #fb84ff 100%);
 $faqMainColor: linear-gradient(144deg, #ffb78f 0%, #db73ff 100%);

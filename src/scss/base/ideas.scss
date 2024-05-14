@@ -1,0 +1,144 @@
+.ideas {
+    &__content {
+        margin-top: 88px;
+
+        @include breakpoints(md) {
+            margin-top: 100px;
+        }
+
+        @include breakpoints(sm) {
+            margin-top: 120px;
+        }
+    }
+
+    &__title {
+        font-size: 60px;
+        color: $mainColorText;
+        text-align: center;
+        font-weight: 700;
+
+        @include breakpoints(md) {
+            font-size: 36px;
+        }
+
+        @include breakpoints(sm) {
+            font-size: 24px;
+        }
+    }
+
+    &__title-gradient {
+        background: $mainColorGradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__block {
+        display: flex;
+        width: 79%;
+        margin: 40px auto 0;
+        gap: 40px;
+
+        @include breakpoints(xl) {
+            width: 95%;
+            gap: 30px;
+        }
+
+        @include breakpoints(md) {
+            padding: 0 2%;
+            width: 100%;
+            gap: 52px;
+            overflow-y: auto;
+        }
+
+        @include breakpoints(sm) {
+            padding: 0 52px;
+        }
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__border {
+        padding: 1px;
+        background: $mainColorGradient;
+        border-radius: 60px;
+        width: 100%;
+        height: 340px;
+
+        @include breakpoints(sm) {
+            border-radius: 40px;
+            height: 219px;
+        }
+    }
+
+    &__fill {
+        min-height: 100%;
+        padding: 22px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $backgroundWebsite;
+        border-radius: 60px;
+
+        @include breakpoints(md) {
+            width: 340px;
+        }
+
+        @include breakpoints(sm) {
+            border-radius: 40px;
+            width: 238px;
+            padding: 16px;
+        }
+    }
+
+    &__svg {
+        width: 90px;
+        height: 90px;
+
+        @include breakpoints(sm) {
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    &__block-title {
+        margin-top: 7px;
+        color: $mainColorText;
+        font-size: 28px;
+        font-weight: 600;
+        text-align: center;
+
+        @include breakpoints(sm) {
+            font-size: 16px;
+            font-weight: 600;
+        }
+    }
+
+    &__text {
+        margin-top: 17px;
+        font-size: 17px;
+        font-weight: 500;
+        text-align: center;
+
+        @include breakpoints(sm) {
+            font-size: 12px;
+        }
+    }
+
+    &__link {
+        margin-top: auto;
+        font-size: 20px;
+        font-weight: 600;
+        background: $mainColorGradient;
+        align-items: center;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include breakpoints(sm) {
+            font-size: 15px;
+        }
+    }
+}

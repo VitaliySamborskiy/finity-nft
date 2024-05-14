@@ -1,0 +1,191 @@
+@import "vars";
+@import "mixins";
+
+.burger {
+    display: none;
+
+    @include breakpoints(xl) {
+        display: block;
+    }
+
+    &__icon {
+        display: none;
+
+        @include breakpoints(xl) {
+            cursor: pointer;
+            display: flex;
+            flex-direction: column;
+            position: relative;
+            gap: 5px;
+            z-index: 1;
+        }
+
+        span {
+            width: 30px;
+            height: 2px;
+            background: $mainColorText;
+            opacity: 1;
+            transition: all 0.5s ease-in-out;
+        }
+    }
+
+    &__icon_active {
+        span:nth-child(1) {
+            transform: rotate(-45deg) translate(-8px, 6px);
+        }
+    }
+
+    &__icon_active {
+        span:nth-child(2) {
+            opacity: 0;
+        }
+    }
+
+    &__icon_active {
+        span:nth-child(3) {
+            transform: rotate(45deg) translate(-4px, -2px);
+        }
+    }
+
+    &__background {
+        position: absolute;
+        top: 0;
+        left: -100%;
+        height: 100vh;
+        width: 100%;
+        background: $backgroundBurger;
+        opacity: 0;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &__background_active {
+        top: 0;
+        left: 0;
+        opacity: 1;
+    }
+
+    &__items-background {
+        background: $backgroundItemsBurger;
+        position: absolute;
+        width: 470px;
+        height: 100vh;
+        top: 0;
+        left: 0;
+
+        @include breakpoints(md) {
+            width: 400px;
+        }
+
+        @include breakpoints(sm) {
+            width: 80%;
+        }
+    }
+
+    &__scroll {
+        overflow: auto;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+
+    &__items {
+        height: 100%;
+        margin-top: 30px;
+
+        @include breakpoints(sm) {
+            margin-top: 10px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        width: 70%;
+        margin: 0 auto;
+        font-size: 32px;
+        font-weight: 600;
+        padding: 18px 0 18px 0;
+        z-index: 2;
+
+        @include breakpoints(md) {
+            font-size: 20px;
+        }
+
+        @include breakpoints(sm) {
+            font-size: 16px;
+        }
+    }
+
+    &__button-block {
+        margin-top: auto;
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        padding: 35px 0;
+    }
+
+    &__main-button {
+        display: flex;
+        gap: 10px;
+    }
+
+    &__button {
+        padding: 10px 25px;
+        border-radius: 50px;
+        background: $mainColorGradient;
+
+        @include breakpoints(md) {
+            padding: 8px 15px;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        @include breakpoints(sm) {
+            padding: 8px 10px;
+            font-size: 16px;
+        }
+    }
+
+    &__logo {
+        margin: 50px auto 0;
+        width: 70%;
+
+        @include breakpoints(md) {
+            margin: 30px auto 0;
+        }
+
+        @include breakpoints(sm) {
+            margin: 15px auto 0;
+        }
+    }
+
+    &__svg {
+        width: 287px;
+        height: 65px;
+
+        @include breakpoints(md) {
+            width: 200px;
+        }
+
+        @include breakpoints(sm) {
+            width: 140px;
+        }
+    }
+
+    &__line {
+        width: 100%;
+        height: 1px;
+        background: $mainColorGradient;
+    }
+
+    &__language {
+        @include breakpoints(md) {
+            font-size: 16px;
+        }
+    }
+}

@@ -1,0 +1,127 @@
+@import "../base/vars";
+@import "../base/fonts";
+
+.main-section {
+    &__content {
+        width: 81%;
+        margin: 110px auto 0;
+        display: flex;
+        justify-content: space-between;
+
+        @include breakpoints(xl) {
+            width: 95%;
+        }
+
+        @include breakpoints(md) {
+            flex-direction: column-reverse;
+            margin: 40px auto 0;
+            width: 100%;
+            align-items: center;
+        }
+    }
+
+    &__text-block {
+        width: 60%;
+        min-width: 700px;
+
+        @include breakpoints(xl) {
+            width: 100%;
+            min-width: 0;
+        }
+
+        @include breakpoints(md) {
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        @include breakpoints(sm) {
+            margin-top: 18px;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        font-size: 140px;
+        font-family: $supportFonts;
+        background: $mainColorGradient;
+        letter-spacing: 2.2px;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+
+        @include breakpoints(xl) {
+            font-size: 90px;
+        }
+
+        @include breakpoints(sm) {
+            font-size: 55px;
+            letter-spacing: 0.5px;
+        }
+    }
+
+    &__title-support {
+        margin-top: 23px;
+        color: $mainColorText;
+        font-size: 48px;
+        font-weight: 500;
+        font-family: $mainFonts;
+
+        @include breakpoints(xl) {
+            font-size: 40px;
+        }
+
+        @include breakpoints(md) {
+            text-align: center;
+        }
+
+        @include breakpoints(sm) {
+            margin-top: 13px;
+            font-size: 22px;
+        }
+    }
+
+    &__text {
+        color: $textSupportText;
+        margin-top: 23px;
+        font-weight: 400;
+        font-size: 37px;
+
+        @include breakpoints(xl) {
+            font-size: 28px;
+        }
+
+        @include breakpoints(md) {
+            text-align: center;
+        }
+
+        @include breakpoints(sm) {
+            margin-top: 15px;
+            font-size: 20px;
+        }
+    }
+
+    &__button {
+        margin-top: 40px;
+
+        @include breakpoints(sm) {
+            margin-top: 20px;
+        }
+    }
+
+    &__img-block {
+        width: 44%;
+        min-width: 570px;
+
+        @include breakpoints(xl) {
+            width: 100%;
+            min-width: 0;
+            max-width: 550px;
+        }
+
+        @include breakpoints(sm) {
+            width: 74%;
+        }
+    }
+}
