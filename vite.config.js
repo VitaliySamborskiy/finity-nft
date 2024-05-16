@@ -1,7 +1,6 @@
 // vite.config.ts
 import { defineConfig } from "vite";
 import Inspect from "vite-plugin-inspect";
-import { resolve } from "path";
 import injectHTML from "vite-plugin-html-inject";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
@@ -12,21 +11,17 @@ export default defineConfig({
         [
             ViteImageOptimizer({
                 jpg: {
-                    quality: 40,
+                    quality: 90,
                 },
                 png: {
-                    quality: 40,
+                    quality: 80,
                 },
+                webp: {
+                    lossless: false,
+                },
+                gif: {},
             }),
         ],
     ],
-    build: {
-        rollupOptions: {
-            input: {
-                main: resolve(__dirname, "index.html"),
-                d: resolve(__dirname, "src/html/d.html"),
-            },
-        },
-    },
-    base: '/finity-nft/'
+    base: "/finity-nft/",
 });
