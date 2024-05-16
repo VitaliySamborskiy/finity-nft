@@ -97,10 +97,12 @@
 
         &-marketplace {
             max-width: 98%;
+            position: relative;
+            z-index: -2;
 
             @include breakpoints(md) {
-                position: relative;
-                z-index: -2;
+                //position: relative;
+                //z-index: -2;
             }
 
             @include breakpoints(sm) {

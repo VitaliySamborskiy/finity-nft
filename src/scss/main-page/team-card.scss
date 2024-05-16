@@ -1,0 +1,115 @@
+.team-card {
+    &__border {
+        width: 278px;
+        background: $mainColorGradient;
+        padding: 1px;
+        border-radius: 10px;
+        box-shadow: 2px 2px 9px 0 $pinkShadow;
+
+        @include breakpoints(sm) {
+            width: 134px;
+            border-radius: 5px;
+        }
+    }
+
+    &__fill {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: $backgroundWebsite;
+        border-radius: 10px;
+
+        @include breakpoints(sm) {
+            border-radius: 5px;
+        }
+    }
+
+    &__img {
+        border-radius: 10px;
+        width: 100%;
+
+        @include breakpoints(sm) {
+            border-radius: 5px;
+        }
+    }
+
+    &__title {
+        margin-top: 19px;
+        font-weight: 600;
+        font-size: 23px;
+        text-align: center;
+        font-family: $mainFonts;
+
+        @include breakpoints(sm) {
+            margin-top: 5px;
+            font-size: 12px;
+        }
+    }
+
+    &__text {
+        margin-top: 13px;
+        font-weight: 500;
+        font-size: 14px;
+        text-align: center;
+
+        @include breakpoints(sm) {
+            margin-top: 4px;
+            font-size: 9px;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            overflow: hidden;
+            width: 80%;
+        }
+    }
+
+    &__items {
+        margin: 33px 0 11px 0;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+
+        @include breakpoints(xl) {
+            margin: 33px 0 17px 0;
+        }
+
+        @include breakpoints(sm) {
+            margin: 2px 0 17px 0;
+            gap: 12px;
+        }
+    }
+
+    &__item {
+        @include breakpoints(sm) {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &__svg {
+        width: 19px;
+        height: 19px;
+
+        @include breakpoints(sm) {
+            width: 12px;
+            height: 12px;
+        }
+    }
+
+    &__slide {
+        width: 70%;
+    }
+}
+
+.swiper-slide {
+    width: 278px !important;
+    margin: 0 auto;
+
+    @include breakpoints(md) {
+        margin-right: 20px;
+    }
+
+    @include breakpoints(sm) {
+        width: 130px !important;
+        margin-right: 10px;
+    }
+}

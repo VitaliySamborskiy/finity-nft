@@ -1,0 +1,186 @@
+.team {
+    &__content {
+        position: relative;
+        margin: 137px auto 0;
+        width: 95%;
+
+        @include breakpoints(xl) {
+            width: 100%;
+        }
+
+        @include breakpoints(md) {
+            margin: 112px auto 0;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        text-align: center;
+
+        @include breakpoints(md) {
+            font-size: 30px;
+        }
+    }
+
+    &__swiper {
+        @include breakpoints(md) {
+            margin: 19px auto 0;
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    &__block {
+        width: 1250px;
+        margin: 45px auto 0;
+        height: 892px;
+        display: grid;
+        justify-items: center;
+        grid-template-columns: repeat(4, 1fr);
+        row-gap: 35px;
+        column-gap: 44px;
+        overflow: hidden;
+        transition: all 0.5s ease-in-out;
+
+        @include breakpoints(xl) {
+            grid-template-columns: repeat(3, 1fr);
+            width: 85%;
+        }
+    }
+
+    &__block_active {
+        height: 1350px;
+
+        @include breakpoints(xl) {
+            height: 1818px;
+        }
+    }
+
+    &__svg {
+        transition: all 0.5s ease-in-out;
+        transform-origin: center;
+    }
+
+    &__svg_active {
+        transform: rotate(180deg);
+    }
+
+    &__button {
+        margin: 55px auto 0;
+        display: flex;
+        align-items: center;
+        padding: 16px 25px;
+        gap: 12px;
+        border: 2px solid $mainColorText;
+        border-radius: 50px 0;
+        transition: all 0.5s ease-in-out;
+
+        @include breakpoints(md) {
+            display: none;
+        }
+
+        &-svg {
+            stroke: $mainColorText;
+        }
+
+        &:hover {
+            color: $backgroundWebsite;
+            background: $mainColorText;
+
+            .team__svg {
+                stroke: $backgroundWebsite;
+                transition: all 0.5s ease-in-out;
+            }
+        }
+
+        .team__button &-text {
+            font-weight: 600;
+            font-size: 22px;
+        }
+
+        &-svg {
+            width: 17px;
+            height: 14px;
+        }
+    }
+
+    &__button-next,
+    &__button-prev {
+        display: none;
+
+        @include breakpoints(md) {
+            display: flex;
+            gap: 25px;
+            width: 58px;
+            height: 68px;
+        }
+
+        @include breakpoints(sm) {
+            width: 38px;
+            height: 38px;
+            gap: 5px;
+        }
+    }
+
+    &__prev-svg,
+    &__next-svg {
+        width: 58px;
+        height: 68px;
+
+        @include breakpoints(sm) {
+            width: 38px;
+            height: 38px;
+        }
+    }
+
+    &__next-svg {
+        transform: rotate(180deg);
+    }
+
+    &__bluer {
+        position: absolute;
+        z-index: -1;
+        top: -45%;
+        left: -40%;
+
+        &:nth-child(2) {
+            top: -32%;
+            left: 45%;
+        }
+
+        @include breakpoints(md) {
+            display: none;
+        }
+    }
+
+    &__bluer-mobile {
+        display: none;
+
+        @include breakpoints(md) {
+            display: block;
+            position: absolute;
+            z-index: -1;
+            width: 100%;
+            top: -35%;
+            left: -35%;
+        }
+    }
+
+    &__bluer-mobile:nth-child(4) {
+        @include breakpoints(md) {
+            top: 14%;
+            left: 40%;
+        }
+
+        @include breakpoints(sm) {
+            top: 25%;
+            left: 40%;
+        }
+    }
+}
+
+.swiper {
+    width: 92% !important;
+    padding: 4px !important;
+}
