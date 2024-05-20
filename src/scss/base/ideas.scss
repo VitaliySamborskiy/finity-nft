@@ -7,7 +7,7 @@
         }
 
         @include breakpoints(sm) {
-            margin-top: 120px;
+            margin-top: 33px;
         }
     }
 
@@ -48,6 +48,7 @@
             padding: 0 2%;
             width: 100%;
             gap: 52px;
+            margin: 30px auto 0;
             overflow-y: auto;
         }
 

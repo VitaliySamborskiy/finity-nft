@@ -1,0 +1,72 @@
+.moving-img {
+    &__content {
+        position: relative;
+        margin-top: 55px;
+        display: flex;
+        width: 100%;
+        background: $backgroundWebsite;
+        overflow: hidden;
+
+        @include breakpoints(md) {
+            background-color: transparent;
+        }
+
+        @include breakpoints(sm) {
+            margin-top: 35px;
+        }
+    }
+
+    &__scroll {
+        display: flex;
+        align-items: center;
+        gap: 54px;
+        animation: img-anim 15s linear infinite;
+
+        &:nth-child(1) {
+            padding-left: 20px;
+        }
+    }
+
+    &__img {
+        width: 90%;
+        height: 93%;
+
+        @include breakpoints(md) {
+            height: 62px;
+        }
+    }
+}
+
+.desctop {
+    display: flex;
+    @include breakpoints(md) {
+        display: none;
+    }
+}
+
+.mobile {
+    display: none;
+    @include breakpoints(md) {
+        display: flex;
+    }
+}
+
+@keyframes img-anim {
+    0% {
+        transform: translateX(0px);
+    }
+    100% {
+        transform: translateX(-2138px);
+    }
+}
+
+@include breakpoints(md) {
+    @keyframes img-anim {
+        0% {
+            transform: translateX(0px);
+        }
+        100% {
+            transform: translateX(-1611px);
+        }
+    }
+}
