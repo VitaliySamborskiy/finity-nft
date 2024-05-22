@@ -46,6 +46,11 @@ export const teamShow = () => {
         } else {
             if (!removeClass.classList.contains("team__block")) {
                 removeClass.classList.add("team__block");
+                // if (!removeClass.classList.contains("team__block_active")) {
+                //     heightBlock.classList.remove("team__block_active");
+                // } else {
+                //     heightBlock.classList.add("team__block_active");
+                // }
             }
             if (removeClass.classList.contains("swiper-wrapper")) {
                 removeClass.classList.remove("swiper-wrapper");

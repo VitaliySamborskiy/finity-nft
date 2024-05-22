@@ -181,6 +181,9 @@
 }
 
 .swiper {
-    width: 92% !important;
+    width: 95% !important;
     padding: 4px !important;
+    @include breakpoints(xl) {
+        width: 92% !important;
+    }
 }

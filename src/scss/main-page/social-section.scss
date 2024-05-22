@@ -1,0 +1,68 @@
+.social {
+    &__content {
+        margin-top: 175px;
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 60px;
+        text-align: center;
+    }
+
+    &__links {
+        position: relative;
+    }
+
+    &__link {
+        position: absolute;
+        &-img {
+        }
+    }
+
+    &__linkedin {
+        top: 78px;
+        left: 51%;
+    }
+
+    &__discord {
+        top: 175px;
+        left: 35%;
+    }
+
+    &__reddit {
+        top: 350px;
+        left: 46%;
+    }
+
+    &__telegram {
+        top: 390px;
+        left: 29%;
+    }
+
+    &__twitter {
+    }
+
+    &__instagram {
+    }
+
+    &__img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+
+        &-smartphone {
+            width: 66%;
+            margin-top: 362px;
+            align-items: center;
+            z-index: -1;
+        }
+
+        &-smartphone-body {
+            width: 71%;
+            bottom: -8%;
+            position: absolute;
+        }
+    }
+}
