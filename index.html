@@ -4,9 +4,9 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Vite App</title>
-      <script type="module" crossorigin src="/finity-nft/assets/index-BuxYFtzH.js"></script>
-      <link rel="stylesheet" crossorigin href="/finity-nft/assets/index-BihnJEQy.css">
+        <title>Finity NFT</title>
+      <script type="module" crossorigin src="/finity-nft/assets/index-4ZMYf382.js"></script>
+      <link rel="stylesheet" crossorigin href="/finity-nft/assets/index-BYNjIhX_.css">
     </head>
     <body>
         <div class="wrapper">
@@ -16,30 +16,32 @@
             <svg class="header__svg"><use href="#logo"></use></svg
         ></a>
         <div class="header__navigation">
-            <nav class="header__nav-section">
-                <ul class="nav-items">
-                    <li>
-                        <a class="link" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#">Marketplace</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#">Token</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#">Fund</a>
-                    </li>
-                </ul>
-                <select class="language">
-                    <option class="header__language-option" selected>EN</option>
-                    <option class="header__language-option">UA</option>
-                </select>
-            </nav>
-            <div class="button-block">
-                <a class="link-button" href="#">Contact Us</a>
-                <a class="link-button-colors" href="#">Buy Token</a>
-            </div>
+            <nav class="navigation">
+    <ul class="navigation__items">
+        <li class="navigation__item">
+            <a class="link" href="#">Home</a>
+        </li>
+        <li class="navigation__item">
+            <a class="link" href="#">Marketplace</a>
+        </li>
+        <li class="navigation__item">
+            <a class="link" href="#">Token</a>
+        </li>
+        <li class="navigation__item">
+            <a class="link" href="#">Fund</a>
+        </li>
+    </ul>
+    <select class="navigation__language {=$hide}">
+        <option class="navigation__language-option" selected>EN</option>
+        <option class="navigation__language-option">UA</option>
+    </select>
+</nav>
+
+            <div class="link-button-block {=$class-special}">
+    <a class="link-button {=$class-special-link}" href="#">Contact Us</a>
+    <a class="link-button-colors {=$class-special-link}" href="#">Buy Token</a>
+</div>
+
         </div>
         <div class="burger">
             <div class="burger__icon">
@@ -63,9 +65,7 @@
                             </li>
                             <li class="burger__line"></li>
                             <li>
-                                <a class="link burger__item" href="#"
-                                    >Marketplace</a
-                                >
+                                <a class="link burger__item" href="#">Marketplace</a>
                             </li>
                             <li class="burger__line"></li>
                             <li>
@@ -79,21 +79,12 @@
                         </ul>
                         <div class="burger__button-block">
                             <div class="burger__main-button">
-                                <a class="burger__button" href="#"
-                                    >Contact Us</a
-                                >
+                                <a class="burger__button" href="#">Contact Us</a>
                                 <a class="burger__button" href="#">Buy Token</a>
                             </div>
                             <select class="burger__language">
-                                <option
-                                    class="header__language-option"
-                                    selected
-                                >
-                                    EN
-                                </option>
-                                <option class="header__language-option">
-                                    UA
-                                </option>
+                                <option class="header__language-option" selected>EN</option>
+                                <option class="header__language-option">UA</option>
                             </select>
                         </div>
                     </div>
@@ -114,10 +105,11 @@
             <p class="main-section__text">
                 Finity Touch creates the infrastructure for a secure and innovative future
             </p>
-            <div class="button-block">
-                <a class="link-button main-section__button" href="#">Contact Us</a>
-                <a class="link-button-colors main-section__button" href="#">Buy Token</a>
-            </div>
+            <div class="link-button-block main-section__button-margin">
+    <a class="link-button {=$class-special-link}" href="#">Contact Us</a>
+    <a class="link-button-colors {=$class-special-link}" href="#">Buy Token</a>
+</div>
+
         </div>
         <div class="main-section__img-block">
             <img src="/finity-nft/assets/main-page-1-L6x3ZZ-Q.gif" />
@@ -379,7 +371,7 @@
                 </svg>
             </button>
             <div class="swiper">
-                <div class="toggle-class team__block">
+                <div class="team__block">
                     <div class="swiper-slide">
     <div class="team-card team-card__border">
         <div class="team-card__fill">
@@ -938,48 +930,78 @@
     </div>
 </section>
 
+                <section class="contact contact__container">
+    <div class="contact__content">
+        <h2 class="contact__title">Contact Us</h2>
+        <img class="contact__img" src="/finity-nft/assets/main-coin-1-DQP42yG_.webp" />
+        <form action="" class="contact__form">
+            <div class="contact__form-block">
+                <div class="contact__input-block">
+                    <input class="contact__input-pitch" placeholder=" " type="text" name="" />
+                    <label class="contact__input-name">Name</label>
+                    <div class="contact__input-line"></div>
+                </div>
+                <div class="contact__input-block">
+                    <input class="contact__input-pitch" placeholder=" " type="email" name="" />
+                    <label class="contact__input-name">Mail</label>
+                    <div class="contact__input-line"></div>
+                </div>
+                <div class="contact__input-block">
+                    <input class="contact__input-pitch" placeholder=" " type="password" name="" />
+                    <label class="contact__input-name">Your message</label>
+                    <div class="contact__input-line"></div>
+                </div>
+            </div>
+            <div class="contact__input-button-block">
+                <input class="contact__input-button" type="button" name="Send" value="Send" />
+            </div>
+        </form>
+        <img class="contact__img-2" src="/finity-nft/assets/main-coin-2-j_hkTbSF.webp" />
+    </div>
+</section>
+
             </main>
-            <footer class="footer">
+            <footer class="footer footer__main-page-margin">
     <div class="footer__content">
         <div class="footer__nav">
             <nav class="navigation">
-                <ul class="nav-items">
-                    <li class="footer__item">
-                        <a class="link" href="#">Home</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="link" href="#">Marketplace</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="link" href="#">Token</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="link" href="#">Fund</a>
-                    </li>
-                </ul>
-                <select class="language">
-                    <option class="footer__language-option" selected>EN</option>
-                    <option class="footer__language-option">UA</option>
-                </select>
-            </nav>
-            <div class="button-block">
-                <a class="link-button footer__button" href="#">Contact Us</a>
-                <a class="link-button-colors footer__button" href="#"
-                    >Buy Token</a
-                >
-            </div>
+    <ul class="navigation__items">
+        <li class="navigation__item">
+            <a class="link" href="#">Home</a>
+        </li>
+        <li class="navigation__item">
+            <a class="link" href="#">Marketplace</a>
+        </li>
+        <li class="navigation__item">
+            <a class="link" href="#">Token</a>
+        </li>
+        <li class="navigation__item">
+            <a class="link" href="#">Fund</a>
+        </li>
+    </ul>
+    <select class="navigation__language footer__hide">
+        <option class="navigation__language-option" selected>EN</option>
+        <option class="navigation__language-option">UA</option>
+    </select>
+</nav>
+
+            <div class="link-button-block {=$class-special}">
+    <a class="link-button footer__button" href="#">Contact Us</a>
+    <a class="link-button-colors footer__button" href="#">Buy Token</a>
+</div>
+
         </div>
         <div class="footer__copyright">
             <a class="footer__logo" href="#">
                 <svg class="footer__svg"><use href="#logo"></use></svg
             ></a>
             <p class="footer__text">
-                This website is maintained by Tihon Belenkiy. The contents and
-                opinions of this website are those of Finity Touch. Finity Touch
-                provides links to cryptocurrency exchanges as a service to the
-                public
+                This website is maintained by Tihon Belenkiy. The contents and opinions of this
+                website are those of Finity Touch. Finity Touch provides links to cryptocurrency
+                exchanges as a service to the public
             </p>
         </div>
+        <img class="footer__img" src="/finity-nft/assets/main-coin-3-CXBSHGYE.webp" />
     </div>
 </footer>
 
