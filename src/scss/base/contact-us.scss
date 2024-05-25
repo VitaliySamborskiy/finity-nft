@@ -1,0 +1,171 @@
+.contact {
+    &__content {
+        position: relative;
+        margin-top: 270px;
+
+        @include breakpoints(md) {
+            margin-top: 170px;
+        }
+
+        @include breakpoints(sm) {
+            margin-top: 97px;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        font-family: $mainFonts;
+        text-align: center;
+
+        @include breakpoints(md) {
+            font-size: 35px;
+        }
+
+        @include breakpoints(sm) {
+            font-size: 21px;
+        }
+    }
+
+    &__form {
+        margin: 60px auto 0;
+        width: 33%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        @include breakpoints(xl) {
+            min-width: 450px;
+        }
+
+        @include breakpoints(md) {
+            margin: 40px auto 0;
+            width: 65%;
+        }
+
+        @include breakpoints(sm) {
+            width: 86%;
+            min-width: 0;
+        }
+    }
+
+    &__form-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 36px;
+
+        @include breakpoints(sm) {
+            gap: 39px;
+        }
+    }
+
+    &__input {
+        &-block {
+            position: relative;
+        }
+
+        &-name {
+            top: 0;
+            left: 0;
+            padding: 0 10px;
+            position: absolute;
+            color: $textSupportText;
+            font-size: 28px;
+            font-weight: 500;
+            font-family: $mainFonts;
+            z-index: -1;
+            transition: 0.5s ease-in-out;
+
+            @include breakpoints(sm) {
+                font-size: 13px;
+            }
+        }
+
+        &-pitch {
+            padding: 0 10px 20px;
+            color: $textSupportText;
+            font-size: 28px;
+            font-weight: 500;
+            width: 100%;
+            font-family: $mainFonts;
+            transition: 0.5s ease-in-out;
+
+            @include breakpoints(sm) {
+                padding: 0 10px 7px;
+                font-size: 13px;
+            }
+
+            &:focus {
+                color: $mainColorText;
+            }
+
+            &:focus ~ .contact__input-name,
+            &:not(:placeholder-shown) ~ .contact__input-name {
+                color: $mainColorText;
+                top: -25px;
+                font-size: 15px;
+            }
+        }
+
+        &-line {
+            height: 3px;
+            width: 100%;
+            background: $borderInputGradient;
+
+            @include breakpoints(sm) {
+                height: 2px;
+            }
+        }
+
+        &-button-block {
+            margin-top: 58px;
+            padding: 2px;
+            width: 220px;
+            background: $borderInputGradient;
+            border-radius: 0 60px;
+
+            @include breakpoints(sm) {
+                width: 133px;
+                margin-top: 27px;
+            }
+        }
+
+        &-button {
+            padding: 15px 73px;
+            width: 100%;
+            color: $mainColorText;
+            font-size: 28px;
+            font-weight: 600;
+            font-family: $mainFonts;
+            background: $backgroundWebsite;
+            border-radius: 0 60px;
+
+            @include breakpoints(sm) {
+                padding: 9px 42px;
+                font-size: 19px;
+            }
+        }
+    }
+
+    &__img,
+    &__img-2 {
+        position: absolute;
+
+        @include breakpoints(md) {
+            display: none;
+        }
+    }
+
+    &__img {
+        width: 46.5%;
+        top: -68%;
+        left: -7%;
+    }
+
+    &__img-2 {
+        width: 45%;
+        top: -16%;
+        left: 64%;
+    }
+}

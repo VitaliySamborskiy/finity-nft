@@ -2,8 +2,13 @@
 
 .footer {
     &__content {
+        position: relative;
         width: 88%;
         margin: 35px auto 0;
+
+        @include breakpoints(md) {
+            width: 95%;
+        }
     }
 
     &__nav {
@@ -11,15 +16,21 @@
         justify-content: space-between;
         width: 87%;
         padding-left: 9px;
-    }
 
-    &__item {
-    }
+        @include breakpoints(xl) {
+            width: 93%;
+        }
 
-    &__language-option {
-    }
+        @include breakpoints(md) {
+            padding: 0;
+            width: 100%;
+        }
 
-    &__button {
+        @include breakpoints(sm) {
+            gap: 25px;
+            align-items: center;
+            flex-direction: column;
+        }
     }
 
     &__copyright {
@@ -28,13 +39,30 @@
         align-items: center;
         justify-content: space-between;
         width: 89%;
+
+        @include breakpoints(xl) {
+            width: 93%;
+        }
+
+        @include breakpoints(md) {
+            width: 100%;
+        }
     }
 
     &__logo {
         width: 257px;
-    }
 
-    &__svg {
+        @include breakpoints(md) {
+            width: 180px;
+        }
+
+        @include breakpoints(sm) {
+            position: absolute;
+            width: 120px;
+            top: -9%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 
     &__text {
@@ -43,5 +71,51 @@
         font-size: 20px;
         font-weight: 500;
         width: 68%;
+
+        @include breakpoints(md) {
+            font-size: 14px;
+        }
+
+        @include breakpoints(sm) {
+            margin: 0 auto 10px;
+            padding: 25px 0 0 0;
+            width: 90%;
+            font-size: 9px;
+            text-align: center;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        top: -26%;
+        left: 89.5%;
+
+        @include breakpoints(md) {
+            display: none;
+        }
+    }
+
+    &__main-page-margin {
+        margin-top: 210px;
+
+        @include breakpoints(xl) {
+            margin-top: 150px;
+        }
+
+        @include breakpoints(md) {
+            margin-top: 100px;
+        }
+
+        @include breakpoints(sm) {
+            margin-top: 80px;
+        }
+    }
+
+    &__button {
+        padding: 12px 12px;
+    }
+
+    &__hide {
+        display: none;
     }
 }

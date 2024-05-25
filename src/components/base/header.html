@@ -4,30 +4,8 @@
             <svg class="header__svg"><use href="#logo"></use></svg
         ></a>
         <div class="header__navigation">
-            <nav class="header__nav-section">
-                <ul class="nav-items">
-                    <li>
-                        <a class="link" href="#">Home</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#">Marketplace</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#">Token</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#">Fund</a>
-                    </li>
-                </ul>
-                <select class="language">
-                    <option class="header__language-option" selected>EN</option>
-                    <option class="header__language-option">UA</option>
-                </select>
-            </nav>
-            <div class="button-block">
-                <a class="link-button" href="#">Contact Us</a>
-                <a class="link-button-colors" href="#">Buy Token</a>
-            </div>
+            <load src="src/components/base/navigation-component.html" />
+            <load src="src/components/base/button-component.html" />
         </div>
         <div class="burger">
             <div class="burger__icon">
@@ -51,9 +29,7 @@
                             </li>
                             <li class="burger__line"></li>
                             <li>
-                                <a class="link burger__item" href="#"
-                                    >Marketplace</a
-                                >
+                                <a class="link burger__item" href="#">Marketplace</a>
                             </li>
                             <li class="burger__line"></li>
                             <li>
@@ -67,21 +43,12 @@
                         </ul>
                         <div class="burger__button-block">
                             <div class="burger__main-button">
-                                <a class="burger__button" href="#"
-                                    >Contact Us</a
-                                >
+                                <a class="burger__button" href="#">Contact Us</a>
                                 <a class="burger__button" href="#">Buy Token</a>
                             </div>
                             <select class="burger__language">
-                                <option
-                                    class="header__language-option"
-                                    selected
-                                >
-                                    EN
-                                </option>
-                                <option class="header__language-option">
-                                    UA
-                                </option>
+                                <option class="header__language-option" selected>EN</option>
+                                <option class="header__language-option">UA</option>
                             </select>
                         </div>
                     </div>

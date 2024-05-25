@@ -5,7 +5,7 @@
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="src/scss/main.scss" />
-        <title>Vite App</title>
+        <title>Finity NFT</title>
     </head>
     <body>
         <div class="wrapper">
@@ -24,8 +24,15 @@
                     faq_color_border="faq__border-purple"
                 />
                 <load src="src/components/main-page/social-section.html" />
+                <load
+                    src="src/components/base/contact-us.html"
+                    token-img="/src/assets/images/main-page/main-coin-1.webp"
+                    token-img-2="/src/assets/images/main-page/main-coin-2.webp"
+                    class-img="contact__img"
+                    class-img-2="contact__img-2"
+                />
             </main>
-            <load src="src/components/base/footer.html" />
+            <load src="src/components/base/footer.html" margin-class="footer__main-page-margin" />
             <load src="src/components/base/sprite.html" />
         </div>
         <script type="module" src="/src/js/main.js"></script>

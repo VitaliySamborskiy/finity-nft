@@ -1,43 +1,22 @@
-<footer class="footer">
+<footer class="footer {=$margin-class}">
     <div class="footer__content">
         <div class="footer__nav">
-            <nav class="navigation">
-                <ul class="nav-items">
-                    <li class="footer__item">
-                        <a class="link" href="#">Home</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="link" href="#">Marketplace</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="link" href="#">Token</a>
-                    </li>
-                    <li class="footer__item">
-                        <a class="link" href="#">Fund</a>
-                    </li>
-                </ul>
-                <select class="language">
-                    <option class="footer__language-option" selected>EN</option>
-                    <option class="footer__language-option">UA</option>
-                </select>
-            </nav>
-            <div class="button-block">
-                <a class="link-button footer__button" href="#">Contact Us</a>
-                <a class="link-button-colors footer__button" href="#"
-                    >Buy Token</a
-                >
-            </div>
+            <load src="src/components/base/navigation-component.html" hide="footer__hide" />
+            <load
+                src="src/components/base/button-component.html"
+                class-special-link="footer__button"
+            />
         </div>
         <div class="footer__copyright">
             <a class="footer__logo" href="#">
                 <svg class="footer__svg"><use href="#logo"></use></svg
             ></a>
             <p class="footer__text">
-                This website is maintained by Tihon Belenkiy. The contents and
-                opinions of this website are those of Finity Touch. Finity Touch
-                provides links to cryptocurrency exchanges as a service to the
-                public
+                This website is maintained by Tihon Belenkiy. The contents and opinions of this
+                website are those of Finity Touch. Finity Touch provides links to cryptocurrency
+                exchanges as a service to the public
             </p>
         </div>
+        <img class="footer__img" src="/src/assets/images/main-page/main-coin-3.webp" />
     </div>
 </footer>

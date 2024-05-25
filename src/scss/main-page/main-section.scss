@@ -1,6 +1,3 @@
-@import "../base/vars";
-@import "../base/fonts";
-
 .main-section {
     &__content {
         width: 81%;
@@ -122,6 +119,14 @@
 
         @include breakpoints(sm) {
             width: 74%;
+        }
+    }
+
+    &__button-margin {
+        margin-top: 40px;
+
+        @include breakpoints(sm) {
+            margin-top: 20px;
         }
     }
 }
