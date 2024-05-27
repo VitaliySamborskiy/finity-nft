@@ -61,6 +61,7 @@
         overflow: hidden;
         width: 51%;
         max-height: 765px;
+        z-index: -2;
 
         @include breakpoints(sm) {
             width: 100%;
@@ -69,11 +70,6 @@
 
     &__img {
         max-width: 104%;
-
-        @include breakpoints(md) {
-            position: relative;
-            z-index: -2;
-        }
 
         @include breakpoints(sm) {
             left: -3%;
@@ -84,8 +80,6 @@
             max-width: 102%;
 
             @include breakpoints(md) {
-                position: relative;
-                z-index: -2;
                 object-fit: contain;
             }
 
@@ -97,13 +91,6 @@
 
         &-marketplace {
             max-width: 98%;
-            position: relative;
-            z-index: -2;
-
-            @include breakpoints(md) {
-                //position: relative;
-                //z-index: -2;
-            }
 
             @include breakpoints(sm) {
                 left: -3%;
