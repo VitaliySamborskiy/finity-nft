@@ -11,13 +11,13 @@ export default defineConfig({
         [
             ViteImageOptimizer({
                 jpg: {
-                    quality: 70,
+                    quality: 80,
                 },
                 png: {
-                    quality: 70,
+                    quality: 75,
                 },
                 webp: {
-                    lossless: true,
+                    lossless: false,
                 },
             }),
         ],
