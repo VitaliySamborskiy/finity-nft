@@ -34,6 +34,7 @@
     &__block {
         width: 1250px;
         margin: 45px auto 0;
+        padding: 5px 0;
         height: 892px;
         display: grid;
         justify-items: center;
@@ -46,6 +47,7 @@
         @include breakpoints(xl) {
             grid-template-columns: repeat(3, 1fr);
             width: 85%;
+            height: 905px;
         }
 
         @include breakpoints(md) {
@@ -63,7 +65,8 @@
     }
 
     &__block_active {
-        height: 1350px;
+        height: 1345px;
+        padding: 5px 0;
 
         @include breakpoints(xl) {
             height: 1818px;
