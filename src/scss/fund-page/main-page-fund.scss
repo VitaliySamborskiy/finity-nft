@@ -1,0 +1,162 @@
+.main {
+  &__content {
+    position: relative;
+    margin: 220px auto 170px;
+    width: 81%;
+
+    @include breakpoints(xl) {
+      margin: 160px auto 130px;
+    }
+
+    @include breakpoints(md) {
+      margin: 0 auto 0;
+      width: 100%;
+    }
+  }
+
+
+  &__background-video {
+    position: absolute;
+    margin-top: 438px;
+    //top: 48%;
+    left: 50%;
+    width: 100%;
+    min-width: 1560px;
+    transform: translate(-50%, -50%);
+
+    @include breakpoints(xl) {
+      margin-top: 395px;
+      //top: 45%;
+      min-width: 1400px;
+    }
+
+    @include breakpoints(md) {
+      margin-top: 0px;
+      top: 34%;
+      min-width: 1020px;
+    }
+
+    @include breakpoints(sm) {
+      top: 30%;
+      min-width: 808px;
+    }
+  }
+
+  &__background-hidden {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -1;
+  }
+
+  &__src-video {
+  }
+
+  &__text-block {
+    width: 460px;
+
+    @include breakpoints(xl) {
+      width: 360px;
+    }
+
+    @include breakpoints(md) {
+      margin: 530px auto 100px;
+      position: relative;
+    }
+
+    @include breakpoints(sm) {
+      margin: 402px auto 60px;
+      width: 304px;
+    }
+  }
+
+  &__title {
+    font-size: 120px;
+    font-weight: 600;
+    line-height: 110%;
+    background: $grant;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+    @include breakpoints(xl) {
+      font-size: 95px;
+    }
+
+    @include breakpoints(sm) {
+      font-size: 60px;
+      padding: 0 0 0 42px;
+    }
+
+    &:nth-child(2) {
+      line-height: 90%;
+      text-align: end;
+
+      @include breakpoints(sm) {
+        padding: 9px 48px 0 0;
+      }
+    }
+  }
+
+  &__text {
+    margin-top: 15px;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 130%;
+
+    @include breakpoints(xl) {
+      font-size: 18px;
+      text-align: center;
+    }
+
+    @include breakpoints(sm) {
+      margin-top: 20px;
+    }
+  }
+
+  &__img-blur {
+    position: absolute;
+    top: -100%;
+    left: 50%;
+
+    @include breakpoints(md) {
+      top: -160%;
+      left: 45%;
+    }
+
+    @include breakpoints(sm) {
+      display: none;
+
+    }
+  }
+
+  &__img-mobile {
+    display: none;
+
+    @include breakpoints(sm) {
+      display: block;
+      position: absolute;
+      top: -90%;
+      left: 70%;
+
+    }
+  }
+
+  &__color-fill {
+    &:after {
+      background: $grant;
+    }
+  }
+
+  &__color-border {
+    margin-top: 38px;
+    background: $grant;
+
+    @include breakpoints(md) {
+      margin: 28px auto;
+    }
+  }
+}

@@ -119,19 +119,19 @@
 
     @include breakpoints(sm) {
         &__text-block {
-            top: 11%;
+            top: 16%;
             left: 50%;
             transform: translate(-50%, -50%);
 
             &-games {
-                top: 28%;
+                top: 33%;
                 left: 52%;
                 transform: translate(-50%, -50%);
                 width: 82%;
             }
 
             &-marketplace {
-                top: 27%;
+                top: 33%;
                 left: 50%;
                 transform: translate(-50%, -50%);
                 width: 84%;
@@ -247,7 +247,8 @@
     }
 
     &__vertical-text,
-    &__vertical-text-game {
+    &__vertical-text-game,
+    &__vertical-text-marketplace {
         margin: 0 0 0 9px;
         writing-mode: vertical-rl;
         font-size: 19px;
@@ -260,11 +261,23 @@
         }
     }
 
-    &__vertical-text-game {
-        margin: 0 0 0 6px;
-
+    &__vertical-text {
         @include breakpoints(sm) {
-            margin: 64px 0 0 0;
+            margin: 74px 0 0 5px;
+        }
+
+        &-game {
+            margin: 0 0 0 6px;
+
+            @include breakpoints(sm) {
+                margin: 84px 0 0 0;
+            }
+        }
+
+        &-marketplace {
+            @include breakpoints(sm) {
+                margin: 84px 0 0 5px;
+            }
         }
     }
 
@@ -348,6 +361,7 @@
         @include breakpoints(sm) {
             flex-direction: column;
             align-items: center;
+            padding-top: 45px;
         }
     }
 
@@ -355,7 +369,18 @@
         &-games {
             width: 93%;
             padding-top: 35px;
+
+            @include breakpoints(sm) {
+                padding-top: 57px;
+            }
         }
+
+        &-marketplace {
+            @include breakpoints(sm) {
+                padding-top: 57px;
+            }
+        }
+
     }
 
     &__bluer,

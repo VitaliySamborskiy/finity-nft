@@ -1,5 +1,3 @@
-@import "vars";
-
 .link {
     font-weight: 500;
 
@@ -58,3 +56,61 @@
         }
     }
 }
+
+.leave-button {
+    &__border {
+        position: relative;
+        display: block;
+        padding: 2px;
+        border-radius: 60px 0;
+        width: 257px;
+        overflow: hidden;
+
+        @include breakpoints(md) {
+            width: 228px;
+        }
+    }
+
+    &__text {
+        position: relative;
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
+    }
+
+    &__fill {
+        padding: 16px 35px;
+        font-weight: 600;
+        font-size: 22px;
+        width: 100%;
+        background: $backgroundWebsite;
+        border-radius: 60px 0;
+
+        @include breakpoints(md) {
+            font-size: 20px;
+            padding: 16px 30px;
+        }
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            content: "";
+            width: 0;
+            height: 100%;
+            z-index: -0;
+            transition: width 0.5s ease-in-out;
+        }
+
+        &:hover {
+            p {
+                color: $backgroundWebsite;
+            }
+
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}
+

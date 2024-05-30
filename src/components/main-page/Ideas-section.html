@@ -4,58 +4,34 @@
             Designed with the <span class="ideas__title-gradient">idea</span>
         </h2>
     </div>
-    <div class="ideas__block">
-        <div class="ideas__border">
-            <div class="ideas__fill">
-                <svg class="ideas__svg">
-                    <use href="#market"></use>
-                </svg>
-                <h3 class="ideas__block-title">Marketplace</h3>
-                <p class="ideas__text">
-                    Discover the world of unique and exclusive NFT with the new Finity Touch trading
-                    platform
-                </p>
-                <a class="ideas__link" href="#">More</a>
-            </div>
-        </div>
-        <div class="ideas__border">
-            <div class="ideas__fill">
-                <svg class="ideas__svg">
-                    <use href="#overbuying"></use>
-                </svg>
-                <h3 class="ideas__block-title">Fund</h3>
-                <p class="ideas__text">
-                    Finity Touch Foundation provides an opportunity to get maximum support for new
-                    ideas in the world of Web 3.0
-                </p>
-                <a class="ideas__link" href="#">More</a>
-            </div>
-        </div>
-        <div class="ideas__border">
-            <div class="ideas__fill">
-                <svg class="ideas__svg">
-                    <use href="#nft"></use>
-                </svg>
-                <h3 class="ideas__block-title">Games</h3>
-                <p class="ideas__text">
-                    Play using the Finity token and have fun earning money. Your success is only in
-                    your hands!
-                </p>
-                <a class="ideas__link" href="#">More</a>
-            </div>
-        </div>
-        <div class="ideas__border">
-            <div class="ideas__fill">
-                <svg class="ideas__svg">
-                    <use href="#token"></use>
-                </svg>
-                <h3 class="ideas__block-title">Token</h3>
-                <p class="ideas__text">
-                    This is an asset that feeds the Finity Touch ecosystem and ensures the
-                    development of existing projects.
-                </p>
-                <a class="ideas__link" href="#">More</a>
-            </div>
-        </div>
+    <div class="ideas__block {=$margin}">
+        <load src="src/components/base/ideas-card.html"
+              fill="ideas__violet-fiill"
+              border-color="ideas__violet"
+              title="Marketplace"
+              name-svg="#market"
+              text="Discover the world of unique and exclusive NFT with the new Finity Touch trading
+                    platform"/>
+        <load src="src/components/base/ideas-card.html"
+              fill="ideas__violet-fiill"
+              border-color="ideas__violet"
+              title="Fund"
+              name-svg="#overbuying"
+              text="Finity Touch Foundation provides an opportunity to get maximum support for new
+                    ideas in the world of Web 3.0"/>
+        <load src="src/components/base/ideas-card.html"
+              fill="ideas__violet-fiill"
+              border-color="ideas__violet"
+              title="Games"
+              name-svg="#nft"
+              text="Play using the Finity token and have fun earning money. Your success is only in
+                    your hands!"/>
+        <load src="src/components/base/ideas-card.html"
+              fill="ideas__violet-fiill"
+              border-color="ideas__violet"
+              title="Token"
+              name-svg="#token"
+              text="This is an asset that feeds the Finity Touch ecosystem and ensures the
+                    development of existing projects."/>
     </div>
 </section>

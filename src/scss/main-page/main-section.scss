@@ -1,7 +1,7 @@
 .main-section {
     &__content {
         width: 81%;
-        margin: 110px auto 0;
+        margin: 203px auto 0;
         display: flex;
         justify-content: space-between;
 
@@ -11,9 +11,13 @@
 
         @include breakpoints(md) {
             flex-direction: column-reverse;
-            margin: 40px auto 0;
+            margin: 150px auto 0;
             width: 100%;
             align-items: center;
+        }
+
+        @include breakpoints(sm) {
+            margin: 95px auto 0;
         }
     }
 

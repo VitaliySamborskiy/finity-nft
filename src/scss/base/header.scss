@@ -1,21 +1,29 @@
 .header {
     &__content {
-        margin-top: 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 17px 25px 17px 60px;
         width: 100%;
         display: flex;
         justify-content: space-between;
+        background: $headerGradient;
+        backdrop-filter: blur(30px);
+        z-index: 2;
+
 
         @include breakpoints(xl) {
             align-items: center;
-            width: 95%;
+            padding: 17px 45px 17px 60px;
         }
 
         @include breakpoints(md) {
-            margin-top: 23px;
+            padding: 23px 45px 23px 60px;
         }
 
         @include breakpoints(sm) {
             width: 100%;
+            padding: 23px 13px 22px 10px;
         }
     }
 
@@ -26,7 +34,7 @@
 
     &__navigation {
         width: 57%;
-        min-width: 1020px;
+        min-width: 1050px;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -37,7 +45,7 @@
     }
 
     &__logo {
-        padding: 3px 0 0 33px;
+        padding: 3px 0 0 0;
 
         @include breakpoints(md) {
             padding: 0;

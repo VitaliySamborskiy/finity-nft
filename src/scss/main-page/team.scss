@@ -9,7 +9,7 @@
         }
 
         @include breakpoints(md) {
-            margin: 112px auto 0;
+            margin: 116px auto 0;
         }
     }
 
@@ -49,6 +49,7 @@
         }
 
         @include breakpoints(md) {
+            margin: 0 auto;
             position: relative;
             width: 100%;
             height: 100%;
