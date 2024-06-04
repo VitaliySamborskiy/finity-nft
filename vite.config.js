@@ -1,10 +1,9 @@
 // vite.config.ts
-import  { resolve } from "path";
+import { resolve } from "path";
 import { defineConfig } from "vite";
 import Inspect from "vite-plugin-inspect";
 import injectHTML from "vite-plugin-html-inject";
 import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
-
 
 export default defineConfig({
     plugins: [
@@ -25,13 +24,11 @@ export default defineConfig({
         ],
     ],
     base: "/finity-nft/",
-    build:{
+    build: {
         rollupOptions: {
             input: {
-                outDir: 'dist',
-                assetsDir: 'assets',
-                main: resolve(__dirname, '/index.html'),
-                fund_page: resolve(__dirname, '/src/pages/page-fund.html'),
+                main: resolve("__dirname", "../index.html"),
+                fund_page: resolve("__dirname", "../src/pages/page-fund.html"),
             },
         },
     },

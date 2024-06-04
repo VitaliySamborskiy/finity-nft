@@ -9,6 +9,10 @@
         font-size: 18px;
     }
 
+    @include breakpoints(ssm) {
+        font-size: 16px;
+    }
+
     &:hover {
         color: $games;
     }
@@ -65,8 +69,11 @@
         border-radius: 60px 0;
         width: 257px;
         overflow: hidden;
+        margin-top: 38px;
+        background: $grant;
 
         @include breakpoints(md) {
+            margin: 28px auto;
             width: 228px;
         }
     }
@@ -113,4 +120,3 @@
         }
     }
 }
-

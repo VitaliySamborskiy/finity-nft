@@ -75,6 +75,10 @@ button {
     @include breakpoints(sm) {
         padding: 0 13px;
     }
+
+    @include breakpoints(ssm) {
+        padding: 0 15px;
+    }
 }
 
 .wrapper {

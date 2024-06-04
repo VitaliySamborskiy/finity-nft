@@ -1,28 +1,31 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../scss/fund-page.scss" />
-    <title>Finity Fund</title>
-</head>
-<body>
-<div class="wrapper">
-    <load src="src/components/base/header.html" />
-    <main class="main">
-        <load src="src/components/fund-page/main-page-fund.html" />
-        <load src="src/components/fund-page/ideas-fund.html"
-              margin="ideas__green-margin"/>
-        <load src="src/components/fund-page/roadmap.html"/>
-        <load src="src/components/base/faq-section.html"
-              src_img="../assets/images/fund-page/fund-1.png"
-              fag_color_title="faq__title-green"
-              faq_color_border="faq__border-green"/>
-    </main>
-    <load src="src/components/base/footer.html"/>
-    <load src="src/components/base/sprite.html"/>
-</div>
-<script src="../js/fund-page.js" type="module"></script>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../scss/fund-page.scss" />
+        <title>Finity Fund</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <load src="src/components/base/header.html" />
+            <main class="main">
+                <load src="src/components/fund-page/main-page-fund.html" />
+                <load src="src/components/fund-page/ideas-fund.html" margin="ideas__green-margin" />
+                <load src="src/components/fund-page/roadmap.html" />
+                <load
+                    src="src/components/base/faq-section.html"
+                    src_img="../assets/images/fund-page/fund-1.png"
+                    fag_color_title="faq__title-green"
+                    faq_color_border="faq__border-green"
+                    margin="fund-margin"
+                />
+                <load src="src/components/fund-page/roadmap.html" />
+            </main>
+            <load src="src/components/base/footer.html" />
+            <load src="src/components/base/sprite.html" />
+        </div>
+        <script src="../js/fund-page.js" type="module"></script>
+    </body>
 </html>
