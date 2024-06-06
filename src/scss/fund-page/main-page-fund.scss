@@ -146,6 +146,8 @@
     }
 
     &__color-fill {
+        background: $backgroundWebsite;
+
         &:after {
             background: $grant;
         }
@@ -156,7 +158,8 @@
         background: $grant;
 
         @include breakpoints(md) {
-            margin: 28px auto;
+            margin: 28px auto 0;
+            display: flex;
         }
     }
 }

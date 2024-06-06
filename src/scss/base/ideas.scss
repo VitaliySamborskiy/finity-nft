@@ -185,7 +185,7 @@
                 padding: 7px 36px;
             }
 
-            @include breakpoints(sm) {
+            @include breakpoints(ssm) {
                 padding: 7px 20px;
             }
         }

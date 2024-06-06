@@ -125,6 +125,10 @@
             @include breakpoints(sm) {
                 font-size: 14px;
             }
+
+            @include breakpoints(ssm) {
+                width: 90%;
+            }
         }
 
         &-svg {
@@ -192,6 +196,10 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
+
+    &__img-fund {
+        margin-top: 0;
+    }
 }
 
 .index-margin {
@@ -200,4 +208,8 @@
 
 .fund-margin {
     margin-top: 335px;
+
+    @include breakpoints(md) {
+        margin-top: 80px;
+    }
 }

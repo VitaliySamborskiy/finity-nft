@@ -70,13 +70,12 @@
         @include breakpoints(sm) {
             height: 67px;
         }
-
     }
 
     &__text {
         padding: 10px 0 0 0;
         color: $textSupportText;
-        font-size: 20px;
+        font-size: 17px;
         font-weight: 500;
         width: 68%;
 
@@ -119,8 +118,18 @@
         }
     }
 
+    &__fond-page-margin {
+        margin-top: 95px;
+
+        @include breakpoints(md) {
+            margin-top: 40px;
+        }
+    }
+
     &__button {
-        padding: 12px 12px;
+        @include breakpoints(sm) {
+            padding: 12px 12px;
+        }
     }
 
     &__hide {

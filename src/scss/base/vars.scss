@@ -13,6 +13,11 @@ $borderInputGradient: linear-gradient(
     rgba(252, 132, 255, 1) 0%,
     rgba(84, 209, 250, 1) 100%
 );
+$gradientFondButton: linear-gradient(
+    144deg,
+    rgba(252, 132, 255, 1) 15%,
+    rgba(84, 209, 250, 1) 100%
+);
 $pinkShadow: #91009d;
 $greenShadow: rgba(85, 255, 57, 0.5);
 $greenShadowBorder: #169d00;

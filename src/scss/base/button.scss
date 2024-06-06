@@ -64,36 +64,28 @@
 .leave-button {
     &__border {
         position: relative;
-        display: block;
         padding: 2px;
         border-radius: 60px 0;
-        width: 257px;
         overflow: hidden;
-        margin-top: 38px;
-        background: $grant;
-
-        @include breakpoints(md) {
-            margin: 28px auto;
-            width: 228px;
-        }
     }
 
     &__text {
         position: relative;
-        z-index: 1;
-        transition: all 0.5s ease-in-out;
-    }
-
-    &__fill {
-        padding: 16px 35px;
         font-weight: 600;
         font-size: 22px;
-        width: 100%;
-        background: $backgroundWebsite;
-        border-radius: 60px 0;
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
 
         @include breakpoints(md) {
             font-size: 20px;
+        }
+    }
+
+    &__fill {
+        padding: 16px 38px;
+        border-radius: 60px 0;
+
+        @include breakpoints(md) {
             padding: 16px 30px;
         }
 
@@ -101,11 +93,63 @@
             position: absolute;
             top: 0;
             left: 0;
-            display: block;
             content: "";
             width: 0;
             height: 100%;
-            z-index: -0;
+            transition: width 0.5s ease-in-out;
+        }
+
+        &:hover {
+            p {
+                color: $backgroundWebsite;
+            }
+
+            &:after {
+                width: 100%;
+            }
+        }
+    }
+}
+
+.application-button {
+    &__border {
+        position: relative;
+        padding: 2px;
+        border-radius: 0 68px;
+        overflow: hidden;
+    }
+
+    &__text {
+        position: relative;
+        font-weight: 600;
+        font-size: 33px;
+        z-index: 1;
+        transition: all 0.5s ease-in-out;
+
+        @include breakpoints(md) {
+            font-size: 18px;
+        }
+
+        @include breakpoints(ssm) {
+            font-size: 13px;
+        }
+    }
+
+    &__fill {
+        padding: 18px 67px;
+        border-radius: 0 68px;
+
+        @include breakpoints(md) {
+            padding: 10px 18px;
+        }
+
+        &:after {
+            position: absolute;
+            top: 0;
+            left: 0;
+            content: "";
+            width: 0;
+            height: 100%;
             transition: width 0.5s ease-in-out;
         }
 

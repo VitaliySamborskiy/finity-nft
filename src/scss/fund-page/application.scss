@@ -1,0 +1,205 @@
+.application {
+    &__content {
+        position: relative;
+        margin: 345px auto 0;
+        width: 90%;
+
+        @include breakpoints(xl) {
+            margin: 300px auto 0;
+        }
+
+        @include breakpoints(md) {
+            margin: 150px auto 0;
+        }
+
+        @include breakpoints(sm) {
+            margin: 76px auto 0;
+        }
+    }
+
+    &__img-block {
+    }
+
+    &__img {
+        position: absolute;
+        width: 52%;
+        top: -54%;
+        left: -17%;
+        z-index: -1;
+
+        @include breakpoints(xl) {
+            left: -27%;
+        }
+
+        @include breakpoints(md) {
+            top: -34%;
+        }
+
+        @include breakpoints(sm) {
+            display: none;
+        }
+
+        &:nth-child(2) {
+            width: 52%;
+            top: -88%;
+            left: 65%;
+
+            @include breakpoints(xl) {
+                left: 75%;
+            }
+
+            @include breakpoints(md) {
+                top: -54%;
+            }
+        }
+    }
+
+    &__button-block {
+        position: relative;
+        margin: 0 auto;
+        width: 800px;
+
+        @include breakpoints(md) {
+            width: 70%;
+            min-width: 600px;
+        }
+
+        @include breakpoints(sm) {
+            width: 100%;
+            min-width: 0;
+        }
+    }
+
+    &__angle-top,
+    &__angle-bottom {
+        position: absolute;
+        width: 70px;
+        height: 70px;
+
+        @include breakpoints(md) {
+            width: 50px;
+            height: 50px;
+        }
+
+        @include breakpoints(md) {
+            width: 30px;
+            height: 30px;
+        }
+    }
+
+    &__angle-top {
+        top: -20%;
+        left: 98%;
+
+        @include breakpoints(sm) {
+            top: -38%;
+            left: 92%;
+        }
+    }
+
+    &__angle-bottom {
+        bottom: -20%;
+        left: -4%;
+        transform: rotate(180deg);
+
+        @include breakpoints(sm) {
+            bottom: -40%;
+            left: -2%;
+        }
+    }
+
+    &__title {
+        font-weight: 700;
+        font-size: 50px;
+        font-family: $mainFonts;
+        text-align: center;
+
+        @include breakpoints(md) {
+            font-size: 35px;
+        }
+
+        @include breakpoints(sm) {
+            display: none;
+        }
+    }
+
+    &__button {
+        margin-top: 106px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 23px;
+
+        @include breakpoints(sm) {
+            margin: 0;
+        }
+
+        @include breakpoints(ssm) {
+            gap: 18px;
+        }
+    }
+
+    &__color-border {
+        background: $gradientFondButton;
+        box-shadow: 2px 2px 16px 0 $pinkShadow;
+    }
+
+    &__color-fill {
+        background: $backgroundWebsite;
+
+        &:after {
+            background: $gradientFondButton;
+        }
+    }
+
+    &__link {
+        &-block {
+            margin-top: 105px;
+
+            @include breakpoints(sm) {
+                margin-top: 35px;
+            }
+        }
+
+        &-items {
+            display: flex;
+            justify-content: center;
+            gap: 85px;
+
+            @include breakpoints(md) {
+                gap: 70px;
+            }
+
+            @include breakpoints(sm) {
+                width: 100%;
+                display: grid;
+                grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+                row-gap: 20px;
+                column-gap: 25px;
+            }
+
+            @include breakpoints(ssm) {
+                grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
+            }
+        }
+
+        &-item {
+        }
+
+        &-svg {
+            width: 50px;
+            height: 50px;
+
+            @include breakpoints(md) {
+                width: 37px;
+                height: 37px;
+            }
+        }
+    }
+
+    &__item {
+        @include breakpoints(sm) {
+            margin: 0 auto;
+        }
+    }
+}
