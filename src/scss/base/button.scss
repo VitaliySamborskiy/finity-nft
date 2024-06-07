@@ -82,6 +82,7 @@
     }
 
     &__fill {
+        display: flex;
         padding: 16px 38px;
         border-radius: 60px 0;
 
@@ -138,6 +139,7 @@
     &__fill {
         padding: 18px 67px;
         border-radius: 0 68px;
+        display: flex;
 
         @include breakpoints(md) {
             padding: 10px 18px;
