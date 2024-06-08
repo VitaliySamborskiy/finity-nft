@@ -41,6 +41,10 @@
             @include breakpoints(sm) {
                 margin-top: 25px;
             }
+
+            @include breakpoints(ssm) {
+                margin: 45px auto 0;
+            }
         }
 
         &:nth-child(3) {
@@ -52,6 +56,10 @@
 
             @include breakpoints(sm) {
                 margin-top: 20px;
+            }
+
+            @include breakpoints(ssm) {
+                margin: 45px auto 0;
             }
         }
     }
@@ -114,6 +122,13 @@
             position: absolute;
             width: 85%;
             max-width: 450px;
+            transform: translate(-50%, -50%);
+        }
+
+        @include breakpoints(ssm) {
+            position: static;
+            transform: translate(-0%, -0%);
+            margin: 0 auto;
         }
     }
 
@@ -121,19 +136,16 @@
         &__text-block {
             top: 16%;
             left: 50%;
-            transform: translate(-50%, -50%);
 
             &-games {
                 top: 33%;
                 left: 52%;
-                transform: translate(-50%, -50%);
                 width: 82%;
             }
 
             &-marketplace {
                 top: 33%;
                 left: 50%;
-                transform: translate(-50%, -50%);
                 width: 84%;
             }
         }
@@ -331,6 +343,10 @@
             width: 100%;
             padding-top: 110px;
         }
+
+        @include breakpoints(ssm) {
+            padding-top: 0px;
+        }
     }
 
     &__bottom-block {
@@ -340,6 +356,10 @@
             @include breakpoints(sm) {
                 padding-top: 165px;
             }
+
+            @include breakpoints(ssm) {
+                padding-top: 0px;
+            }
         }
 
         &-marketplace {
@@ -347,6 +367,10 @@
 
             @include breakpoints(sm) {
                 padding-top: 162px;
+            }
+
+            @include breakpoints(ssm) {
+                padding-top: 0px;
             }
         }
     }
@@ -380,7 +404,6 @@
                 padding-top: 57px;
             }
         }
-
     }
 
     &__bluer,

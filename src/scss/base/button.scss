@@ -20,7 +20,6 @@
     &-button {
         padding: 16px 32px;
         border-radius: 50px;
-        border: 2px solid $mainColorText;
 
         @include breakpoints(md) {
             font-size: 19px;
@@ -28,7 +27,12 @@
         }
 
         @include breakpoints(sm) {
+            padding: 20px 18px;
+        }
+
+        @include breakpoints(ssm) {
             font-size: 16px;
+            padding: 14px 10px;
         }
 
         &-block {
@@ -36,26 +40,40 @@
             align-items: center;
             gap: 21px;
 
-            @include breakpoints(md) {
-            }
-
             @include breakpoints(sm) {
                 gap: 23px;
+            }
+        }
+
+        &-white {
+            border: 2px solid $mainColorText;
+
+            @include breakpoints(sm) {
+                padding: 18px 18px;
+            }
+
+            @include breakpoints(ssm) {
+                padding: 12px 10px;
             }
         }
 
         &-colors {
             padding: 16px 42px;
             background: $mainColorGradient;
-            border-radius: 50px;
+            //border-radius: 50px;
 
             @include breakpoints(md) {
-                font-size: 19px;
+                //font-size: 19px;
                 padding: 18px 22px;
             }
 
             @include breakpoints(sm) {
-                font-size: 19px;
+                //font-size: 19px;
+            }
+
+            @include breakpoints(ssm) {
+                //font-size: 16px;
+                padding: 14px 10px;
             }
         }
     }
@@ -70,10 +88,12 @@
     }
 
     &__text {
+        display: block;
         position: relative;
         font-weight: 600;
         font-size: 22px;
         z-index: 1;
+        letter-spacing: 1px;
         transition: all 0.5s ease-in-out;
 
         @include breakpoints(md) {
@@ -121,9 +141,11 @@
     }
 
     &__text {
+        display: block;
         position: relative;
         font-weight: 600;
         font-size: 33px;
+        letter-spacing: 1px;
         z-index: 1;
         transition: all 0.5s ease-in-out;
 

@@ -130,6 +130,19 @@
         @include breakpoints(sm) {
             padding: 12px 12px;
         }
+
+        &-white,
+        &-colors {
+            @include breakpoints(sm) {
+                font-size: 16px;
+                padding: 14px 15px;
+            }
+        }
+
+        &-white {
+            padding: 12px 13px;
+            border: 2px solid $mainColorText;
+        }
     }
 
     &__hide {

@@ -32,6 +32,10 @@
         @include breakpoints(sm) {
             height: 110px;
         }
+
+        @include breakpoints(ssm) {
+            height: 160px;
+        }
     }
 
     &__link {
@@ -70,6 +74,10 @@
         @include breakpoints(sm) {
             top: 34%;
         }
+
+        @include breakpoints(ssm) {
+            top: 26%;
+        }
     }
 
     &__discord {
@@ -80,6 +88,10 @@
         @include breakpoints(sm) {
             top: 57%;
             left: 30%;
+        }
+
+        @include breakpoints(ssm) {
+            top: 47%;
         }
     }
 
@@ -96,6 +108,10 @@
             top: 97%;
             left: 44%;
         }
+
+        @include breakpoints(ssm) {
+            top: 80%;
+        }
     }
 
     &__telegram {
@@ -110,6 +126,10 @@
         @include breakpoints(sm) {
             top: 105%;
             left: 22.5%;
+        }
+
+        @include breakpoints(ssm) {
+            top: 90%;
         }
     }
 
@@ -126,6 +146,10 @@
             top: 110%;
             left: 61.5%;
         }
+
+        @include breakpoints(ssm) {
+            top: 100%;
+        }
     }
 
     &__instagram {
@@ -140,6 +164,10 @@
         @include breakpoints(sm) {
             top: 155%;
             left: 29%;
+        }
+
+        @include breakpoints(ssm) {
+            top: 130%;
         }
     }
 
@@ -162,6 +190,10 @@
             @include breakpoints(sm) {
                 width: 87%;
             }
+
+            @include breakpoints(ssm) {
+                width: 93%;
+            }
         }
 
         &-smartphone-body {
@@ -176,6 +208,10 @@
 
             @include breakpoints(sm) {
                 width: 93%;
+            }
+
+            @include breakpoints(ssm) {
+                width: 100%;
             }
         }
     }

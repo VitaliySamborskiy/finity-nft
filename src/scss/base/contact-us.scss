@@ -10,6 +10,10 @@
         @include breakpoints(sm) {
             margin-top: 97px;
         }
+
+        @include breakpoints(ssm) {
+            margin-top: 70px;
+        }
     }
 
     &__title {
