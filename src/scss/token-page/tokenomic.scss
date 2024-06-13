@@ -1,0 +1,442 @@
+.tokenomic {
+    &__content {
+        margin: 180px auto 0;
+        width: 80%;
+        position: relative;
+
+        @include breakpoints(md) {
+            margin: 120px auto 0;
+        }
+
+        @include breakpoints(sm) {
+            margin: 70px auto 0;
+            width: 100%;
+        }
+    }
+
+    &__title-block {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        font-family: $mainFonts;
+        font-weight: 600;
+        font-size: 69px;
+
+        @include breakpoints(md) {
+            font-size: 45px;
+        }
+
+        @include breakpoints(sm) {
+            font-size: 30px;
+        }
+    }
+
+    &__gradient {
+        background: $mainColorGradient;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    &__text {
+        margin: 22px 0 0;
+        width: 75%;
+        font-weight: 500;
+        font-size: 25px;
+        line-height: 155%;
+        text-align: center;
+
+        @include breakpoints(md) {
+            margin: 12px 0 0;
+            width: 90%;
+        }
+
+        @include breakpoints(sm) {
+            width: 88%;
+            font-size: 12px;
+        }
+    }
+
+    &__chart {
+        margin: 0 auto;
+        position: relative;
+        width: 46.5%;
+        min-width: 650px;
+
+        @include breakpoints(md) {
+            min-width: 450px;
+        }
+
+        @include breakpoints(sm) {
+            min-width: 190px;
+            max-width: 200px;
+        }
+
+        @include breakpoints(ssm) {
+            min-width: 175px;
+        }
+
+        &-info-block {
+            position: absolute;
+            display: flex;
+            z-index: -1;
+
+            &:nth-child(2) {
+                top: -14%;
+                left: 48.5%;
+
+                @include breakpoints(md) {
+                    top: -15%;
+                    left: 49.5%;
+                }
+
+                @include breakpoints(sm) {
+                    top: -24%;
+                    left: 47%;
+                }
+            }
+
+            &:nth-child(3) {
+                top: -7%;
+                left: 68%;
+
+                @include breakpoints(md) {
+                    top: -8%;
+                    left: 72%;
+                }
+
+                @include breakpoints(sm) {
+                    top: -11%;
+                    left: 69%;
+                }
+            }
+
+            &:nth-child(4) {
+                top: 5.3%;
+                left: 83.5%;
+
+                @include breakpoints(md) {
+                    top: 5%;
+                    left: 88%;
+                }
+
+                @include breakpoints(sm) {
+                    top: 4%;
+                    left: 84%;
+                }
+            }
+
+            &:nth-child(5) {
+                top: 34.5%;
+                left: 98.7%;
+
+                @include breakpoints(md) {
+                    top: 27%;
+                    left: 99%;
+                }
+
+                @include breakpoints(sm) {
+                    top: 12%;
+                    left: 100%;
+                }
+            }
+
+            &:nth-child(6) {
+                top: 83.5%;
+                left: 85.5%;
+
+                @include breakpoints(md) {
+                    top: 73%;
+                    left: 90%;
+                }
+
+                @include breakpoints(sm) {
+                    top: 78%;
+                    left: 86%;
+                }
+            }
+
+            &:nth-child(7) {
+                top: 94%;
+                left: 1%;
+                flex-direction: row-reverse;
+
+                @include breakpoints(md) {
+                    top: 88%;
+                }
+
+                @include breakpoints(sm) {
+                    top: 85%;
+                    left: -6%;
+                }
+            }
+
+            &:nth-child(8) {
+                top: 15.5%;
+                left: -29%;
+                flex-direction: row-reverse;
+
+                @include breakpoints(md) {
+                    top: 5%;
+                    left: -25%;
+                }
+
+                @include breakpoints(sm) {
+                    left: -35%;
+                }
+            }
+
+            &:nth-child(9) {
+                top: -11%;
+                left: 10%;
+                flex-direction: row-reverse;
+
+                @include breakpoints(md) {
+                    top: -15%;
+                }
+
+                @include breakpoints(sm) {
+                    top: -26%;
+                    left: 8%;
+                }
+            }
+        }
+
+        &-text-block {
+            position: relative;
+            margin-top: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transform: translateY(40px);
+            opacity: 0;
+            transition: all 0.5s ease-in-out 0.75s;
+        }
+
+        &-text-block_active {
+            transform: translateY(0);
+            opacity: 1;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 80%;
+
+            @include breakpoints(md) {
+                font-size: 30px;
+            }
+
+            @include breakpoints(sm) {
+                font-size: 15px;
+            }
+        }
+
+        &-text {
+            font-weight: 600;
+            font-size: 20px;
+            white-space: nowrap;
+
+            @include breakpoints(md) {
+                font-size: 16px;
+            }
+
+            @include breakpoints(sm) {
+                font-size: 8px;
+            }
+        }
+    }
+
+    &__hidden {
+        width: 0;
+        overflow: hidden;
+        transition: width 1.5s ease-in-out;
+    }
+
+    &__hidden_active {
+        width: 100%;
+    }
+
+    &__svg {
+        max-width: 119px;
+
+        @include breakpoints(md) {
+            width: 55px;
+        }
+
+        @include breakpoints(sm) {
+            width: 33px;
+        }
+
+        &-one {
+            height: 148px;
+
+            @include breakpoints(md) {
+                height: 110px;
+            }
+
+            @include breakpoints(sm) {
+                height: 80px;
+            }
+        }
+
+        &-two {
+            height: 128px;
+
+            @include breakpoints(md) {
+                height: 100px;
+            }
+
+            @include breakpoints(sm) {
+                height: 60px;
+            }
+        }
+
+        &-three {
+            height: 125px;
+
+            @include breakpoints(md) {
+                height: 150px;
+            }
+
+            @include breakpoints(sm) {
+                height: 126px;
+            }
+        }
+
+        &-four {
+            height: 57px;
+
+            @include breakpoints(md) {
+                height: 77px;
+            }
+
+            @include breakpoints(sm) {
+                height: 48px;
+            }
+        }
+
+        &-five {
+            height: 67px;
+
+            @include breakpoints(md) {
+                height: 85px;
+            }
+
+            @include breakpoints(sm) {
+                height: 58px;
+            }
+        }
+
+        &-six {
+            height: 153px;
+
+            @include breakpoints(md) {
+                height: 120px;
+            }
+
+            @include breakpoints(sm) {
+                height: 86px;
+            }
+        }
+
+        &-seven {
+            @include breakpoints(md) {
+                height: 130px;
+            }
+
+            @include breakpoints(sm) {
+                height: 97px;
+            }
+        }
+    }
+
+    &__img {
+        position: relative;
+        margin: 150px auto 0;
+        width: 100%;
+        //transform: rotate(-60deg);
+        //opacity: 0;
+        //transition: all 1s ease-in-out;
+
+        @include breakpoints(md) {
+            margin: 120px auto 0;
+        }
+
+        @include breakpoints(sm) {
+            margin: 62px auto 0;
+        }
+    }
+
+    //&__img_active {
+    //    opacity: 1;
+    //    transform: rotate(0deg);
+    //}
+
+    &__blur-img {
+        position: absolute;
+        top: -50%;
+        left: -70%;
+        z-index: -2;
+
+        @include breakpoints(md) {
+            top: -30%;
+            left: -60%;
+        }
+
+        &:nth-child(2) {
+            top: 55%;
+            left: 55%;
+
+            @include breakpoints(md) {
+                top: 65%;
+                left: 45%;
+            }
+        }
+    }
+
+    &__margin {
+        &-one {
+            margin: 60px 0 0 8px;
+
+            @include breakpoints(sm) {
+                margin: 60px 0 0 2px;
+            }
+        }
+
+        &-two {
+            margin: 20px 0 0 5px;
+        }
+
+        &-three {
+            margin: 28px 0 0;
+        }
+
+        &-four {
+            margin: 28px 8px 0;
+
+            @include breakpoints(sm) {
+                margin: 28px 0 0;
+            }
+        }
+
+        &-five {
+            margin: 32px 21px 0 0;
+
+            @include breakpoints(sm) {
+                margin: 32px 0 0;
+            }
+        }
+    }
+
+    &__right {
+        transform-origin: right;
+    }
+
+    &__left {
+        transform-origin: left;
+    }
+}

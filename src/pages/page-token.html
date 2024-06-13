@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="../scss/token-page.scss" />
+        <title>Finity Token</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <load src="src/components/base/header.html" />
+            <main class="main">
+                <load
+                    src="src/components/base/main-page.html"
+                    src_video="../assets/images/token-page/token-background.mp4"
+                    title="Token"
+                    video-top="main__background-video-purple"
+                    text-main-page="Finity Token - is an asset that fuels the Finity Touch ecosystem and ensures the development of existing projects and the possibility of discovering new fragments of the ecosystem."
+                    button-text="Buy Token"
+                    button-color-border="main__color-border-purple"
+                    button-color-fill="main__color-fill-purple"
+                    class-text-block="main__text-block-purple"
+                    class-title="main__title-purple"
+                    src-img-blur="../assets/images/token-page/token-blur-1.webp"
+                    src-img-blur-mobile="../assets/images/token-page/token-blur-mobile-1.webp"
+                />
+                <load
+                    src="src/components/token-page/ideas-token.html"
+                    margin="ideas__green-margin"
+                />
+                <load src="src/components/token-page/tokenomic-section.html" />
+                <load src="src/components/token-page/roadmape.html" />
+                <load
+                    src="src/components/base/contact-us.html"
+                    token-img="/src/assets/images/main-page/main-coin-1.webp"
+                    token-img-2="/src/assets/images/main-page/main-coin-2.webp"
+                    class-img="contact__img"
+                    class-img-2="contact__img-2"
+                />
+            </main>
+            <load src="src/components/base/footer.html" margin-class="footer__fond-page-margin" />
+            <load src="src/components/base/sprite.html" />
+        </div>
+        <script src="../js/token-page.js" type="module"></script>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+<section class="main">
+    <div class="main__background-hidden">
+        <video
+            class="main__background-video {=$video-top}"
+            preload="metadata"
+            muted
+            loop
+            playsinline
+        >
+            <source class="main__src-video" src="{=$src_video}" />
+        </video>
+    </div>
+    <div class="main__container">
+        <div class="main__content">
+            <div class="{=$class-text-block}">
+                <h2 class="main__title {=$class-title}">Finity</h2>
+                <h2 class="main__title {=$class-title}">{=$title}</h2>
+                <p class="main__text">{=$text-main-page}</p>
+                <load
+                    src="src/components/base/button.html"
+                    button-border="leave-button__border"
+                    color-border="{=$button-color-border}"
+                    button-fill="leave-button__fill"
+                    color-fill="{=$button-color-fill}"
+                    text-button="{=$button-text}"
+                    button-text-class="leave-button__text"
+                />
+            </div>
+            <img class="main__img-blur" src="{=$src-img-blur}" alt="blur" />
+            <img class="main__img-mobile" src="{=$src-img-blur-mobile}" alt="blur" />
+        </div>
+    </div>
+</section>

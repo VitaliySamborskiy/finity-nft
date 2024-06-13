@@ -101,15 +101,20 @@
         white-space: normal;
         text-overflow: ellipsis;
 
+        @include breakpoints(xl) {
+            height: 105px;
+        }
+
         @include breakpoints(md) {
-            height: 75px;
+            font-size: 12px;
+            height: 77px;
             -webkit-line-clamp: 6;
             line-clamp: 6;
         }
 
-        @include breakpoints(sm) {
-            font-size: 12px;
-        }
+        //@include breakpoints(sm) {
+        //    font-size: 12px;
+        //}
     }
 
     &__link {
@@ -186,7 +191,7 @@
         }
     }
 
-    &__violet {
+    &__main-violet {
         background: $mainColorGradient;
         height: 340px;
         box-shadow: 2px 2px 9px 0 $pinkShadow;
@@ -196,8 +201,9 @@
         }
 
         &-block-title {
+            margin-top: 8px;
             color: $mainColorText;
-            font-size: 28px;
+            font-size: 30px;
             font-weight: 600;
             text-align: center;
 
@@ -227,6 +233,7 @@
         }
 
         &-text-margin {
+            margin-top: 11px;
             @include breakpoints(sm) {
                 margin-top: 11px;
             }
@@ -244,5 +251,10 @@
                 padding: 7px 53px;
             }
         }
+    }
+
+    &__violet {
+        box-shadow: 2px 2px 9px 0 $pinkShadow;
+        background: $mainColorGradient;
     }
 }

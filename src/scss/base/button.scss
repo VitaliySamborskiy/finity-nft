@@ -60,19 +60,12 @@
         &-colors {
             padding: 16px 42px;
             background: $mainColorGradient;
-            //border-radius: 50px;
 
             @include breakpoints(md) {
-                //font-size: 19px;
                 padding: 18px 22px;
             }
 
-            @include breakpoints(sm) {
-                //font-size: 19px;
-            }
-
             @include breakpoints(ssm) {
-                //font-size: 16px;
                 padding: 14px 10px;
             }
         }
@@ -81,14 +74,21 @@
 
 .leave-button {
     &__border {
+        margin-top: 38px;
         position: relative;
         padding: 2px;
         border-radius: 60px 0;
         overflow: hidden;
+
+        @include breakpoints(md) {
+            margin: 28px auto 0;
+            display: flex;
+        }
     }
 
     &__text {
         display: block;
+        margin: 0 auto;
         position: relative;
         font-weight: 600;
         font-size: 22px;
@@ -103,11 +103,13 @@
 
     &__fill {
         display: flex;
-        padding: 16px 38px;
+        padding: 16px 0;
         border-radius: 60px 0;
+        width: 250px;
+        text-align: center;
 
         @include breakpoints(md) {
-            padding: 16px 30px;
+            width: 228px;
         }
 
         &:after {
@@ -121,7 +123,7 @@
         }
 
         &:hover {
-            p {
+            span {
                 color: $backgroundWebsite;
             }
 
@@ -178,7 +180,7 @@
         }
 
         &:hover {
-            p {
+            span {
                 color: $backgroundWebsite;
             }
 
