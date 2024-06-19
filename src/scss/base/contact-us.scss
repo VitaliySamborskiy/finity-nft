@@ -1,19 +1,6 @@
 .contact {
     &__content {
         position: relative;
-        margin-top: 270px;
-
-        @include breakpoints(md) {
-            margin-top: 170px;
-        }
-
-        @include breakpoints(sm) {
-            margin-top: 97px;
-        }
-
-        @include breakpoints(ssm) {
-            margin-top: 70px;
-        }
     }
 
     &__title {
@@ -144,6 +131,12 @@
             font-family: $mainFonts;
             background: $backgroundWebsite;
             border-radius: 0 60px;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background: transparent;
+                color: $backgroundWebsite;
+            }
 
             @include breakpoints(sm) {
                 padding: 9px 42px;
@@ -152,24 +145,77 @@
         }
     }
 
-    &__img,
-    &__img-2 {
-        position: absolute;
+    &__index {
+        &-margin {
+            margin-top: 270px;
 
-        @include breakpoints(md) {
-            display: none;
+            @include breakpoints(md) {
+                margin-top: 170px;
+            }
+
+            @include breakpoints(sm) {
+                margin-top: 97px;
+            }
+
+            @include breakpoints(ssm) {
+                margin-top: 70px;
+            }
+        }
+
+        &-img,
+        &-img-2 {
+            position: absolute;
+
+            @include breakpoints(md) {
+                display: none;
+            }
+        }
+
+        &-img {
+            width: 46.5%;
+            top: -68%;
+            left: -7%;
+        }
+
+        &-img-2 {
+            width: 45%;
+            top: -16%;
+            left: 64%;
         }
     }
 
-    &__img {
-        width: 46.5%;
-        top: -68%;
-        left: -7%;
-    }
+    &__token {
+        &-margin {
+            margin-top: 280px;
 
-    &__img-2 {
-        width: 45%;
-        top: -16%;
-        left: 64%;
+            @include breakpoints(md) {
+                margin-top: 200px;
+            }
+
+            @include breakpoints(sm) {
+                margin-top: 133px;
+            }
+        }
+
+        &-img,
+        &-img-2 {
+            position: absolute;
+
+            @include breakpoints(md) {
+                display: none;
+            }
+        }
+
+        &-img {
+            width: 44.5%;
+            top: 3.3%;
+            left: -5.7%;
+        }
+
+        &-img-2 {
+            width: 45%;
+            top: -76%;
+            left: 64%;
+        }
     }
 }

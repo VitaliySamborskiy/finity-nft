@@ -1,0 +1,77 @@
+.not-found {
+    &__content {
+        padding: 350px 0;
+        position: relative;
+        height: 100vh;
+
+        @include breakpoints(sm) {
+            padding: 250px 0;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        z-index: -1;
+        animation: customAni 6s cubic-bezier(0.45, 0, 0.55, 1) 0s infinite alternate backwards;
+
+        @include breakpoints(sm) {
+            max-width: 120%;
+        }
+
+        &:nth-child(1) {
+            top: -60%;
+            left: -24%;
+
+            @include breakpoints(sm) {
+                top: -10%;
+                left: -40%;
+            }
+        }
+
+        &:nth-child(3) {
+            top: 20%;
+            left: 65%;
+
+            @include breakpoints(sm) {
+                top: 50%;
+                left: 30%;
+            }
+        }
+    }
+
+    &__title {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-weight: 600;
+        font-size: 150px;
+        letter-spacing: 0.12em;
+        text-align: center;
+
+        @include breakpoints(xl) {
+            font-size: 100px;
+        }
+
+        @include breakpoints(sm) {
+            font-size: 50px;
+        }
+    }
+}
+
+@keyframes customAni {
+    0% {
+        transform: rotate(0) scale(1);
+        transform-origin: center;
+    }
+
+    50% {
+        transform: rotate(-8deg) scale(1.1);
+        transform-origin: center;
+    }
+
+    100% {
+        transform: rotate(0deg) scale(1);
+        transform-origin: center;
+    }
+}

@@ -14,7 +14,9 @@
     }
 
     &:hover {
-        color: $games;
+        background: $mainColorGradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     &-button {
@@ -35,6 +37,11 @@
             padding: 14px 10px;
         }
 
+        &-text {
+            position: relative;
+            z-index: 1;
+        }
+
         &-block {
             display: flex;
             align-items: center;
@@ -47,6 +54,12 @@
 
         &-white {
             border: 2px solid $mainColorText;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background: $mainColorText;
+                color: $backgroundWebsite;
+            }
 
             @include breakpoints(sm) {
                 padding: 18px 18px;
@@ -58,8 +71,29 @@
         }
 
         &-colors {
+            position: relative;
             padding: 16px 42px;
             background: $mainColorGradient;
+            transition: all 0.5s ease-in-out;
+            overflow: hidden;
+
+            &:after {
+                position: absolute;
+                top: 0;
+                left: 0;
+                content: "";
+                width: 100%;
+                height: 100%;
+                background: $faqMainColor;
+                transition: opacity 0.5s ease-in-out;
+                opacity: 0;
+            }
+
+            &:hover {
+                &:after {
+                    opacity: 1;
+                }
+            }
 
             @include breakpoints(md) {
                 padding: 18px 22px;

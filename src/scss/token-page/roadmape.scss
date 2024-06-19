@@ -1,6 +1,14 @@
 .roadmap {
     &__content {
         margin: 238px auto 0;
+
+        @include breakpoints(xl) {
+            margin: 180px auto 0;
+        }
+
+        @include breakpoints(md) {
+            margin: 118px auto 0;
+        }
     }
 
     &__title-block {
@@ -11,6 +19,10 @@
         font-size: 61px;
         letter-spacing: 0.11em;
         text-align: center;
+
+        @include breakpoints(md) {
+            font-size: 30px;
+        }
     }
 
     &__text {
@@ -19,63 +31,133 @@
         font-size: 25px;
         line-height: 155%;
         text-align: center;
+
+        @include breakpoints(md) {
+            display: none;
+        }
     }
 
     &__block {
+        width: 92%;
         position: relative;
-        margin-top: 90px;
+        display: flex;
+        margin: 90px auto 0;
+
+        @include breakpoints(xl) {
+            width: 100%;
+        }
+
+        @include breakpoints(md) {
+            width: 45%;
+            min-width: 500px;
+            margin-top: 42px;
+        }
+
+        @include breakpoints(sm) {
+            width: 55%;
+            min-width: 341px;
+            margin-top: 50px;
+        }
+
+        @include breakpoints(ssm) {
+            width: 100%;
+            min-width: 260px;
+        }
+    }
+
+    &__left,
+    &__right {
+        display: flex;
+        width: 50%;
+        flex-direction: column;
+
+        @include breakpoints(md) {
+            position: relative;
+        }
+    }
+
+    &__left {
+        padding-left: 110px;
+
+        @include breakpoints(xl) {
+            padding-left: 80px;
+        }
+
+        @include breakpoints(md) {
+            padding-left: 0;
+        }
+    }
+
+    &__right {
+        padding-right: 107px;
+        align-items: end;
+
+        @include breakpoints(xl) {
+            padding-right: 80px;
+        }
+
+        @include breakpoints(md) {
+            padding-right: 0;
+        }
     }
 
     &__img {
         position: absolute;
         top: -0.4%;
-        left: 50.2%;
-        transform: translate(-50%);
-        width: 191px;
+        margin-top: 72px;
+        max-width: 308px;
+        left: 53%;
+        transform: translate(-49%);
+
+        @include breakpoints(xl) {
+            top: 0;
+            max-width: 230px;
+        }
+
+        @include breakpoints(md) {
+            display: none;
+        }
+    }
+
+    &__img-mobile {
+        display: none;
+
+        @include breakpoints(md) {
+            display: block;
+            width: 80px;
+        }
+
+        @include breakpoints(sm) {
+            width: 67px;
+        }
     }
 
     &__title-smile-block {
-        width: 11%;
-        margin: 163px auto 0;
+        position: relative;
+        width: 220px;
     }
 
-    &__smile-title {
-        font-weight: 600;
-        font-size: 30px;
-        letter-spacing: 0.11em;
-        white-space: nowrap;
+    &__border-right,
+    &__border-left {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        width: 86%;
+        min-width: 550px;
 
-        &:nth-child(1) {
-            margin-left: 5px;
+        @include breakpoints(xl) {
+            width: 95%;
+            min-width: 0;
         }
 
-        &:nth-child(2) {
-            margin: 310px 0 0 84px;
-        }
-
-        &:nth-child(3) {
-            margin: 287px 0 0;
-        }
-
-        &:nth-child(4) {
-            margin: 310px 0 0 84px;
-        }
-
-        &:nth-child(5) {
-            margin: 308px 0 0;
-        }
-
-        &:nth-child(6) {
-            margin: 450px 0 0 195px;
+        @include breakpoints(md) {
+            position: absolute;
+            gap: 1px;
+            width: 200%;
         }
     }
 
     &__border-left {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        width: 640px;
         padding: 10px 2px 2px 12px;
         background: $faqMainColor;
         clip-path: polygon(
@@ -166,20 +248,50 @@
             5.07% 9.669%
         );
 
+        @include breakpoints(md) {
+            padding: 7px 1px 1px 9px;
+        }
+
+        @include breakpoints(sm) {
+            padding: 5px 1px 1px 6px;
+        }
+
+        &:nth-child(1) {
+            @include breakpoints(xl) {
+                margin-top: 15px;
+            }
+
+            @include breakpoints(md) {
+                margin-top: -8%;
+                left: -100%;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-top: 283px;
+
+            @include breakpoints(xl) {
+                margin-top: 180px;
+            }
+
+            @include breakpoints(md) {
+                top: 21%;
+                left: -100%;
+            }
+
+            @include breakpoints(sm) {
+                top: 18.2%;
+            }
+
+            @include breakpoints(ssm) {
+                top: 17%;
+            }
+        }
+
         &:nth-child(3) {
-            top: -3.8%;
-            left: 56%;
-        }
-
-        &:nth-child(4) {
-            top: 31.5%;
-            left: 56%;
-        }
-
-        &:nth-child(5) {
+            margin-left: 10px;
             padding: 3px 2px 2px 4px;
-            top: 68.5%;
-            left: 56%;
+            margin-top: 313px;
             clip-path: polygon(
                 3.879% 5.941%,
                 3.879% 5.941%,
@@ -267,15 +379,31 @@
                 3.879% 12.865%,
                 3.879% 5.941%
             );
+
+            @include breakpoints(xl) {
+                margin-left: 5px;
+                margin-top: 205px;
+            }
+
+            @include breakpoints(md) {
+                margin-left: 2px;
+                padding: 2px 2px 2px 4px;
+                top: 54.5%;
+                left: -100%;
+            }
+
+            @include breakpoints(sm) {
+                top: 51.5%;
+            }
+
+            @include breakpoints(ssm) {
+                padding: 2px 1px 2px 3px;
+                top: 50.5%;
+            }
         }
     }
 
     &__border-right {
-        position: absolute;
-        display: flex;
-        flex-direction: column;
-        gap: 2px;
-        width: 640px;
         padding: 4px;
         background: $backgroundTokenBorder;
         clip-path: polygon(
@@ -366,39 +494,204 @@
             95.977% 8.01%
         );
 
-        &:nth-child(6) {
-            top: 15%;
-            left: 9.8%;
+        @include breakpoints(md) {
+            padding: 7px 1px 1px 9px;
+            background: $faqMainColor;
+            clip-path: polygon(
+                5.07% 9.669%,
+                5.07% 9.669%,
+                5.13% 8.431%,
+                5.306% 7.256%,
+                5.588% 6.161%,
+                5.966% 5.161%,
+                6.43% 4.271%,
+                6.971% 3.508%,
+                7.579% 2.888%,
+                8.246% 2.425%,
+                8.96% 2.136%,
+                9.714% 2.036%,
+                95.356% 2.036%,
+                95.356% 2.036%,
+                96.109% 2.136%,
+                96.824% 2.425%,
+                97.49% 2.888%,
+                98.099% 3.508%,
+                98.64% 4.271%,
+                99.104% 5.161%,
+                99.482% 6.161%,
+                99.763% 7.256%,
+                99.939% 8.431%,
+                100% 9.669%,
+                100% 92.366%,
+                100% 92.366%,
+                99.939% 93.605%,
+                99.763% 94.779%,
+                99.482% 95.875%,
+                99.104% 96.875%,
+                98.64% 97.764%,
+                98.099% 98.527%,
+                97.49% 99.148%,
+                96.824% 99.611%,
+                96.109% 99.9%,
+                95.356% 100%,
+                9.714% 100%,
+                9.714% 100%,
+                8.96% 99.9%,
+                8.246% 99.611%,
+                7.579% 99.148%,
+                6.971% 98.527%,
+                6.43% 97.764%,
+                5.966% 96.875%,
+                5.588% 95.875%,
+                5.306% 94.779%,
+                5.13% 93.605%,
+                5.07% 92.366%,
+                5.07% 29.712%,
+                5.07% 29.712%,
+                5.062% 29.459%,
+                5.039% 29.211%,
+                5.002% 28.969%,
+                4.951% 28.735%,
+                4.886% 28.511%,
+                4.809% 28.299%,
+                4.719% 28.099%,
+                4.617% 27.914%,
+                4.504% 27.746%,
+                4.38% 27.595%,
+                1.566% 24.514%,
+                1.566% 24.514%,
+                1.488% 24.408%,
+                1.429% 24.283%,
+                1.387% 24.144%,
+                1.364% 23.997%,
+                1.359% 23.846%,
+                1.372% 23.697%,
+                1.403% 23.553%,
+                1.451% 23.421%,
+                1.516% 23.305%,
+                1.599% 23.21%,
+                4.268% 20.796%,
+                4.268% 20.796%,
+                4.41% 20.65%,
+                4.541% 20.482%,
+                4.659% 20.293%,
+                4.764% 20.086%,
+                4.854% 19.862%,
+                4.93% 19.624%,
+                4.99% 19.373%,
+                5.034% 19.112%,
+                5.06% 18.843%,
+                5.07% 18.567%,
+                5.07% 9.669%
+            );
         }
 
-        &:nth-child(7) {
-            top: 50.3%;
-            left: 9.8%;
+        @include breakpoints(sm) {
+            padding: 5px 1px 1px 6px;
         }
 
-        &:nth-child(8) {
-            top: 95%;
-            left: 9.8%;
+        &:nth-child(1) {
+            margin-top: 355px;
+
+            @include breakpoints(xl) {
+                margin-top: 280px;
+            }
+
+            @include breakpoints(md) {
+                margin-top: 0;
+                top: 16.4%;
+                left: 0;
+            }
+
+            @include breakpoints(sm) {
+                top: 16.6%;
+            }
+        }
+
+        &:nth-child(2) {
+            margin-top: 290px;
+
+            @include breakpoints(xl) {
+                margin-top: 190px;
+            }
+
+            @include breakpoints(md) {
+                top: 37.5%;
+                left: 0;
+            }
+
+            @include breakpoints(sm) {
+                top: 35%;
+            }
+
+            @include breakpoints(ssm) {
+                top: 34%;
+            }
+        }
+
+        &:nth-child(3) {
+            margin-top: 460px;
+
+            @include breakpoints(xl) {
+                margin-top: 310px;
+            }
+
+            @include breakpoints(md) {
+                top: 69.3%;
+                left: 0;
+            }
+
+            @include breakpoints(sm) {
+                top: 63.6%;
+            }
+
+            @include breakpoints(ssm) {
+                top: 62.5%;
+            }
         }
     }
 
     &__border-button {
-        border-radius: 0% 0% 27px 27px;
+        border-radius: 0 0 27px 27px;
+
+        @include breakpoints(md) {
+            border-radius: 0 0 20px 20px;
+        }
+
+        @include breakpoints(sm) {
+            border-radius: 0 0 12px 12px;
+        }
     }
 
     &__fill {
-        margin-left: 23px;
+        margin-left: 3.6%;
         padding: 22px 0 21px 42px;
         width: 96.1%;
         background: $backgroundTokenFill;
 
+        @include breakpoints(xl) {
+            padding: 18px 0 18px 42px;
+        }
+
+        @include breakpoints(md) {
+            padding: 10px 0 10px 25px;
+        }
+
+        @include breakpoints(sm) {
+            padding: 7px 0 7px 15px;
+        }
+
         &-right {
             margin-left: 0;
+
+            @include breakpoints(md) {
+                margin-left: 3.6%;
+            }
         }
     }
 
     &__fill-top {
-        padding: 30px 0 20px 70px;
+        padding: 30px 0 20px 63px;
         margin-left: 0;
         width: 100%;
         clip-path: polygon(
@@ -466,6 +759,18 @@
             95.938% 0.291%,
             95.176% 0%
         );
+
+        @include breakpoints(xl) {
+            padding: 22px 0 20px 63px;
+        }
+
+        @include breakpoints(md) {
+            padding: 13px 0 10px 40px;
+        }
+
+        @include breakpoints(sm) {
+            padding: 9px 0 9px 25px;
+        }
 
         &-right {
             padding: 30px 0 20px 40px;
@@ -536,6 +841,83 @@
                 4.062% 0.291%,
                 4.824% 0%
             );
+
+            @include breakpoints(xl) {
+                padding: 22px 0 20px 40px;
+            }
+
+            @include breakpoints(md) {
+                padding: 13px 0 10px 40px;
+                clip-path: polygon(
+                    95.176% 0%,
+                    8.459% 0%,
+                    8.459% 0%,
+                    7.697% 0.291%,
+                    6.973% 1.133%,
+                    6.298% 2.48%,
+                    5.682% 4.288%,
+                    5.134% 6.509%,
+                    4.664% 9.098%,
+                    4.282% 12.01%,
+                    3.997% 15.198%,
+                    3.819% 18.618%,
+                    3.757% 22.222%,
+                    3.757% 48.125%,
+                    3.757% 48.125%,
+                    3.748% 48.928%,
+                    3.721% 49.712%,
+                    3.676% 50.472%,
+                    3.616% 51.201%,
+                    3.539% 51.895%,
+                    3.447% 52.546%,
+                    3.342% 53.149%,
+                    3.222% 53.699%,
+                    3.09% 54.19%,
+                    2.945% 54.615%,
+                    0.244% 61.641%,
+                    0.244% 61.641%,
+                    0.16% 61.917%,
+                    0.093% 62.255%,
+                    0.044% 62.64%,
+                    0.013% 63.058%,
+                    0% 63.494%,
+                    0.006% 63.933%,
+                    0.029% 64.361%,
+                    0.071% 64.764%,
+                    0.131% 65.128%,
+                    0.21% 65.437%,
+                    3.059% 74.405%,
+                    3.059% 74.405%,
+                    3.184% 74.845%,
+                    3.299% 75.336%,
+                    3.402% 75.875%,
+                    3.493% 76.455%,
+                    3.572% 77.074%,
+                    3.637% 77.726%,
+                    3.689% 78.406%,
+                    3.726% 79.11%,
+                    3.749% 79.833%,
+                    3.757% 80.57%,
+                    3.762% 100%,
+                    99.878% 100%,
+                    99.878% 22.222%,
+                    99.878% 22.222%,
+                    99.816% 18.618%,
+                    99.638% 15.198%,
+                    99.353% 12.01%,
+                    98.971% 9.098%,
+                    98.501% 6.509%,
+                    97.953% 4.288%,
+                    97.337% 2.48%,
+                    96.662% 1.133%,
+                    95.938% 0.291%,
+                    95.176% 0%
+                );
+            }
+
+            @include breakpoints(sm) {
+                padding: 9px 0 9px 25px;
+            }
         }
     }
 
@@ -543,6 +925,18 @@
         font-weight: 500;
         font-size: 37px;
         letter-spacing: 0.11em;
+
+        @include breakpoints(xl) {
+            font-size: 30px;
+        }
+
+        @include breakpoints(md) {
+            font-size: 23px;
+        }
+
+        @include breakpoints(sm) {
+            font-size: 15px;
+        }
     }
 
     &__text-item {
@@ -551,5 +945,52 @@
         font-size: 23px;
         letter-spacing: -0.4px;
         white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        @include breakpoints(xl) {
+            font-size: 18px;
+        }
+
+        @include breakpoints(md) {
+            margin-top: 0;
+            font-size: 14px;
+        }
+
+        @include breakpoints(sm) {
+            font-size: 11px;
+        }
+    }
+
+    &__blur-img {
+        position: absolute;
+        top: -20%;
+        left: -60%;
+
+        @include breakpoints(sm) {
+            top: 7%;
+            left: 40%;
+        }
+
+        &:nth-child(2) {
+            left: 60%;
+            top: 30%;
+
+            @include breakpoints(sm) {
+                left: 25%;
+                top: 40%;
+            }
+        }
+
+        &-mobile {
+            display: none;
+
+            @include breakpoints(sm) {
+                position: absolute;
+                display: block;
+                left: 30%;
+                top: 80%;
+            }
+        }
     }
 }

@@ -3,7 +3,6 @@ export function observerTokenomic() {
         const observer = new IntersectionObserver((entries) => {
             entries.forEach((entry) => {
                 if (entry.isIntersecting) {
-                    console.log(entry);
                     entry.target.classList.add(addClass);
                 }
             });

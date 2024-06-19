@@ -18,6 +18,17 @@
         background: $backgroundWebsite;
         gap: 12px;
         border-radius: 60px 0;
+        transition: background 0.5s ease-in-out;
+
+        &:hover {
+            background: transparent;
+            p {
+                color: $backgroundWebsite;
+            }
+            svg {
+                fill: $backgroundWebsite;
+            }
+        }
 
         @include breakpoints(sm) {
             padding: 13px 19px;
@@ -29,6 +40,7 @@
     &__text {
         font-size: 27px;
         font-weight: 600;
+        transition: color 0.5s ease-in-out;
 
         @include breakpoints(xl) {
             font-size: 25px;
@@ -46,6 +58,9 @@
     &__svg {
         width: 23px;
         height: 26px;
+        z-index: 2;
+        fill: $mainColorText;
+        transition: fill 0.5s ease-in-out;
 
         @include breakpoints(sm) {
             width: 13px;

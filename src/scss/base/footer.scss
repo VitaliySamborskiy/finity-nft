@@ -126,6 +126,14 @@
         }
     }
 
+    &__token-page-margin {
+        margin-top: 120px;
+
+        @include breakpoints(md) {
+            margin-top: 83px;
+        }
+    }
+
     &__button {
         @include breakpoints(sm) {
             padding: 12px 12px;
@@ -140,8 +148,16 @@
         }
 
         &-white {
-            padding: 12px 13px;
             border: 2px solid $mainColorText;
+            transition: all 0.5s ease-in-out;
+
+            &:hover {
+                background: $mainColorText;
+                color: $backgroundWebsite;
+            }
+            @include breakpoints(sm) {
+                padding: 12px 13px;
+            }
         }
     }
 
