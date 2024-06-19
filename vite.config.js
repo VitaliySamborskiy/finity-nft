@@ -30,7 +30,7 @@ export default defineConfig({
                 main: resolve("__dirname", "../index.html"),
                 fund_page: resolve("__dirname", "../src/pages/page-fund.html"),
                 token_page: resolve("__dirname", "../src/pages/page-token.html"),
-                404: resolve("__dirname", "../src/pages/404.html"),
+                404: resolve("__dirname", "../404.html"),
             },
         },
     },
