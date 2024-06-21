@@ -7,9 +7,11 @@ export function copyText() {
         navigator.clipboard
             .writeText(text)
             .then(() => {
+                clickRemove();
                 createNotifications("Copied!");
             })
             .catch(() => {
+                clickRemove();
                 createNotifications("Copying error!");
             });
     });
@@ -40,5 +42,15 @@ export function copyText() {
                 }, 4500);
             });
         }, 4000);
+    }
+
+    function clickRemove() {
+        const notificationsRemove = document.querySelectorAll(".address__notifications-border");
+        notificationsRemove.forEach((item) => {
+            item.classList.remove("address__notifications-border_active");
+            setTimeout(() => {
+                item.remove();
+            }, 500);
+        });
     }
 }
