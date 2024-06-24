@@ -16,7 +16,7 @@
 
     &__background-video {
         position: absolute;
-        margin-top: 438px;
+        margin-top: 442px;
         left: 50%;
         width: 100%;
         min-width: 1560px;
@@ -41,7 +41,7 @@
 
     &__background-video-purple {
         @include breakpoints(sm) {
-            top: 25%;
+            top: 24%;
             min-width: 808px;
         }
 
@@ -56,7 +56,7 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 100%;
+        height: 835px;
         overflow: hidden;
         z-index: -1;
     }

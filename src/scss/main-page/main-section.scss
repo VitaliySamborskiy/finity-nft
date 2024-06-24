@@ -1,7 +1,7 @@
 .main-section {
     &__content {
         width: 81%;
-        margin: 203px auto 0;
+        margin: 204px auto 0;
         display: flex;
         justify-content: space-between;
 
@@ -45,9 +45,8 @@
 
     &__title {
         font-size: 140px;
-        font-family: $supportFonts;
         background: $mainColorGradient;
-        letter-spacing: 2.2px;
+        letter-spacing: 2.3px;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;

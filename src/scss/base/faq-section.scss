@@ -1,5 +1,6 @@
 .faq {
     &__content {
+        position: relative;
         margin: 0 auto;
         width: 81%;
         display: flex;
@@ -136,6 +137,10 @@
             }
         }
 
+        &-text {
+            color: $textSupportText;
+        }
+
         &-svg {
             width: 21px;
             height: 21px;
@@ -204,6 +209,21 @@
 
     &__img-fund {
         margin-top: 0;
+    }
+
+    &__img-fund-blur {
+        position: absolute;
+        z-index: -1;
+        left: 74%;
+        top: 5%;
+
+        @include breakpoints(md) {
+            display: none;
+        }
+    }
+
+    &__img-fund-none {
+        display: none;
     }
 }
 

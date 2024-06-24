@@ -111,10 +111,6 @@
             -webkit-line-clamp: 6;
             line-clamp: 6;
         }
-
-        //@include breakpoints(sm) {
-        //    font-size: 12px;
-        //}
     }
 
     &__link {
@@ -146,7 +142,7 @@
         }
 
         @include breakpoints(sm) {
-            height: 218px;
+            height: 222px;
         }
 
         &-fiill {

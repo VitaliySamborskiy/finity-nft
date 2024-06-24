@@ -1,7 +1,7 @@
 .team {
     &__content {
         position: relative;
-        margin: 137px auto 0;
+        margin: 119px auto 0;
         width: 95%;
 
         @include breakpoints(xl) {
@@ -37,14 +37,14 @@
 
     &__block {
         width: 1250px;
-        margin: 45px auto 0;
+        margin: 38px auto 0;
         padding: 5px 0;
         height: 892px;
         display: grid;
         justify-items: center;
         grid-template-columns: repeat(4, 1fr);
-        row-gap: 35px;
-        column-gap: 44px;
+        row-gap: 37px;
+        column-gap: 40px;
         overflow: hidden;
         transition: all 0.5s ease-in-out;
 
@@ -87,10 +87,10 @@
     }
 
     &__button {
-        margin: 55px auto 0;
+        margin: 64px auto 0;
         display: flex;
         align-items: center;
-        padding: 16px 25px;
+        padding: 16px 24px;
         gap: 12px;
         border: 2px solid $mainColorText;
         border-radius: 50px 0;
@@ -209,12 +209,4 @@
     @include breakpoints(xl) {
         width: 92% !important;
     }
-
-    //&-wrapper {
-    //    display: grid !important;
-    //
-    //    @include breakpoints(md) {
-    //        display: flex !important;
-    //    }
-    //}
 }

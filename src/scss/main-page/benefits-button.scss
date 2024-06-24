@@ -1,7 +1,6 @@
 .button {
     display: flex;
     padding: 3px;
-    width: 297px;
     border-radius: 60px 0;
 
     @include breakpoints(sm) {
@@ -31,7 +30,7 @@
         }
 
         @include breakpoints(sm) {
-            padding: 13px 19px;
+            padding: 12px 19px;
             gap: 7px;
             border-radius: 35px 0;
         }
@@ -39,6 +38,7 @@
 
     &__text {
         font-size: 27px;
+        text-align: center;
         font-weight: 600;
         transition: color 0.5s ease-in-out;
 
@@ -58,7 +58,6 @@
     &__svg {
         width: 23px;
         height: 26px;
-        z-index: 2;
         fill: $mainColorText;
         transition: fill 0.5s ease-in-out;
 
