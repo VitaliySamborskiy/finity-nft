@@ -1,28 +1,35 @@
 $backgroundWebsite: #000000;
-$backgroundBurger: rgba(47, 47, 47, 0.9);
+$backgroundTokenFill: #0d0d0d;
+$headerGradient: rgba(13, 13, 13, 0.2);
 $backgroundItemsBurger: rgb(47, 47, 47);
+$backgroundBurger: rgba(47, 47, 47, 0.9);
 $backgroundSelect: rgba(69, 69, 69, 0.9);
-$mainColorText: #fff;
 $textSupportText: #959595;
-$marketplace: linear-gradient(145deg, #ff6c56 0%, #ff9344 100%);
-$games: linear-gradient(146deg, #7673ff 0%, #42f4ff 100%);
-$grant: linear-gradient(149deg, #b2ff0f 0%, #76ffef 100%);
-$mainColorGradient: linear-gradient(144deg, #86affe 0%, #a57aff 50.78%, #fb84ff 100%);
+$mainColorText: #fff;
+
+$marketplaceFirst: linear-gradient(147deg, #ff7254 0%, #ff7d4e 100%);
+$marketplace: linear-gradient(142deg, #ff7f4e 0%, #ff9245 100%);
+
+$gamesFirst: linear-gradient(147deg, #6d8aff 0%, #5fadff 100%);
+$games: linear-gradient(147deg, #60abff 0%, #4ddaff 100%);
+
+$grantFirst: linear-gradient(180deg, #a8ff38 0%, #9dff61 100%);
+$grant: linear-gradient(169deg, #b2ff0f -20%, #76ffef 80%);
+$greenShadow: rgba(85, 255, 57, 0.5);
+$greenShadowBorder: #169d00;
+
+$ideasSectionMain: linear-gradient(90deg, #d771ff 0%, #f46bff 90%);
+$mainColorGradient: linear-gradient(144deg, #54d6ff 10%, #a57aff 50.78%, #fb84ff 80%);
+$teamCardGradient: linear-gradient(96deg, #54d6ff 0%, #bf79ff 49.26%, #f46bff 100%);
+$headerButtonGradient: linear-gradient(136deg, #54d6ff 20%, #bf79ff 49.26%, #f46bff 100%);
+$faqMainPage: linear-gradient(325deg, #54d6ff 10%, #a57aff 50.78%, #fb84ff 80%);
 $faqMainColor: linear-gradient(144deg, #ffb78f 0%, #db73ff 100%);
-$borderInputGradient: linear-gradient(
-    -85deg,
-    rgba(252, 132, 255, 1) 0%,
-    rgba(84, 209, 250, 1) 100%
-);
+$borderInputGradient: linear-gradient(97deg, #fc84ff 0%, #54d1fa 100%);
 $gradientFondButton: linear-gradient(
     144deg,
     rgba(252, 132, 255, 1) 15%,
     rgba(84, 209, 250, 1) 100%
 );
 $pinkShadow: #91009d;
-$greenShadow: rgba(85, 255, 57, 0.5);
-$greenShadowBorder: #169d00;
-$headerGradient: rgba(13, 13, 13, 0.2);
-$backgroundTokenFill: #0d0d0d;
 $backgroundTokenBorder: linear-gradient(216deg, #ffb78f 0%, #db73ff 100%);
 $addressGradient: linear-gradient(163deg, #fc84ff 0%, #54d1fa 100%);

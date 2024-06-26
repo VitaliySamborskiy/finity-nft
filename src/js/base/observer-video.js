@@ -1,7 +1,6 @@
 export function observerVideo() {
     const options = {
-        rootMargin: "500px",
-        // threshold: 1,
+        rootMargin: "350px",
     };
     const observer = new IntersectionObserver((autoplay) => {
         autoplay.forEach((entry) => {
