@@ -4,6 +4,7 @@
     border-radius: 60px 0;
 
     @include breakpoints(sm) {
+        margin-left: 30px;
         width: 173px;
         padding: 2px;
         border-radius: 35px 0;

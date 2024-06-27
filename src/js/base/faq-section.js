@@ -6,16 +6,30 @@ export function acardion() {
         const svg = accordion.querySelector(".faq__question-svg");
 
         title.addEventListener("click", () => {
-            document.querySelectorAll(".faq__question-text").forEach((el) => {
-                el.classList.remove("faq__question-text_active");
-            });
+            if (text.classList.contains("faq__question-text_active")) {
+                text.classList.remove("faq__question-text_active");
+                svg.classList.remove("faq__question-svg_active");
+            } else {
+                document.querySelectorAll(".faq__question-text").forEach((el) => {
+                    el.classList.remove("faq__question-text_active");
+                });
 
-            document.querySelectorAll(".faq__question-svg").forEach((el) => {
-                el.classList.remove("faq__question-svg_active");
-            });
-
-            text.classList.toggle("faq__question-text_active");
-            svg.classList.toggle("faq__question-svg_active");
+                document.querySelectorAll(".faq__question-svg").forEach((el) => {
+                    el.classList.remove("faq__question-svg_active");
+                });
+                text.classList.add("faq__question-text_active");
+                svg.classList.add("faq__question-svg_active");
+            }
+            // document.querySelectorAll(".faq__question-text").forEach((el) => {
+            //     el.classList.remove("faq__question-text_active");
+            // });
+            //
+            // document.querySelectorAll(".faq__question-svg").forEach((el) => {
+            //     el.classList.remove("faq__question-svg_active");
+            // });
+            //
+            // text.classList.toggle("faq__question-text_active");
+            // svg.classList.toggle("faq__question-svg_active");
         });
     });
 }
