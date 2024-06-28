@@ -1,7 +1,7 @@
 .application {
     &__content {
         position: relative;
-        margin: 345px auto 0;
+        margin: 353px auto 0;
         width: 90%;
 
         @include breakpoints(xl) {
@@ -23,8 +23,8 @@
     &__img {
         position: absolute;
         width: 52%;
-        top: -54%;
-        left: -17%;
+        top: -52%;
+        left: -17.5%;
         z-index: -1;
 
         @include breakpoints(xl) {
@@ -42,7 +42,7 @@
         &:nth-child(2) {
             width: 52%;
             top: -88%;
-            left: 65%;
+            left: 65.7%;
 
             @include breakpoints(xl) {
                 left: 75%;
@@ -89,7 +89,7 @@
 
     &__angle-top {
         top: -20%;
-        left: 98%;
+        left: 99%;
 
         @include breakpoints(sm) {
             top: -38%;
@@ -99,7 +99,7 @@
 
     &__angle-bottom {
         bottom: -20%;
-        left: -4%;
+        left: -5%;
         transform: rotate(180deg);
 
         @include breakpoints(sm) {
@@ -124,7 +124,7 @@
     }
 
     &__button {
-        margin-top: 106px;
+        margin-top: 107px;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -154,7 +154,7 @@
 
     &__link {
         &-block {
-            margin-top: 105px;
+            margin-top: 106px;
 
             @include breakpoints(sm) {
                 margin-top: 35px;
@@ -187,8 +187,8 @@
         }
 
         &-svg {
-            width: 50px;
-            height: 50px;
+            width: 52px;
+            height: 52px;
 
             @include breakpoints(md) {
                 width: 37px;

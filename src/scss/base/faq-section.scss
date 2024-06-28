@@ -2,7 +2,7 @@
     &__content {
         position: relative;
         margin: 0 auto;
-        width: 81%;
+        width: 82%;
         display: flex;
         justify-content: space-between;
 
@@ -30,7 +30,7 @@
         }
 
         @include breakpoints(sm) {
-            min-width: 0px;
+            min-width: 0;
             width: 100%;
         }
     }
@@ -61,7 +61,7 @@
 
     &__question {
         &-block {
-            margin-top: 15px;
+            margin-top: 13px;
             width: 51%;
             min-width: 650px;
             display: flex;
@@ -79,7 +79,7 @@
 
             @include breakpoints(sm) {
                 width: 90%;
-                min-width: 0px;
+                min-width: 0;
                 gap: 10px;
             }
 
@@ -97,7 +97,7 @@
         }
 
         &-title-block {
-            padding: 30px 28px 26px 15px;
+            padding: 30px 23px 28px 15px;
             display: flex;
             align-items: center;
             justify-content: space-between;
@@ -144,7 +144,7 @@
         &-svg {
             width: 21px;
             height: 21px;
-            transition: all 0.5s ease-in-out;
+            transition: transform 0.5s ease-in-out;
 
             @include breakpoints(sm) {
                 width: 18px;
@@ -157,8 +157,7 @@
         }
 
         &-text {
-            height: 0px;
-            overflow: hidden;
+            height: 0;
             margin: 0 10px 0 10px;
             font-weight: 400;
             font-size: 19px;
@@ -228,7 +227,7 @@
 }
 
 .index-margin {
-    margin-top: 156px;
+    margin-top: 162px;
 
     @include breakpoints(md) {
         margin-top: 74px;
@@ -236,7 +235,7 @@
 }
 
 .fund-margin {
-    margin-top: 335px;
+    margin-top: 342px;
 
     @include breakpoints(md) {
         margin-top: 80px;

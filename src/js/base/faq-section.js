@@ -20,16 +20,6 @@ export function acardion() {
                 text.classList.add("faq__question-text_active");
                 svg.classList.add("faq__question-svg_active");
             }
-            // document.querySelectorAll(".faq__question-text").forEach((el) => {
-            //     el.classList.remove("faq__question-text_active");
-            // });
-            //
-            // document.querySelectorAll(".faq__question-svg").forEach((el) => {
-            //     el.classList.remove("faq__question-svg_active");
-            // });
-            //
-            // text.classList.toggle("faq__question-text_active");
-            // svg.classList.toggle("faq__question-svg_active");
         });
     });
 }

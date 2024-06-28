@@ -1,6 +1,6 @@
 .roadmap {
     &__content {
-        margin: 238px auto 0;
+        margin: 244px auto 0;
 
         @include breakpoints(xl) {
             margin: 180px auto 0;
@@ -41,7 +41,7 @@
         width: 92%;
         position: relative;
         display: flex;
-        margin: 90px auto 0;
+        margin: 95px auto 0;
 
         @include breakpoints(xl) {
             width: 100%;
@@ -105,7 +105,7 @@
         position: absolute;
         top: -0.4%;
         margin-top: 72px;
-        max-width: 308px;
+        max-width: 312px;
         left: 53%;
         transform: translate(-49%);
 
@@ -142,7 +142,7 @@
         display: flex;
         flex-direction: column;
         gap: 2px;
-        width: 86%;
+        width: 88%;
         min-width: 550px;
 
         @include breakpoints(xl) {
@@ -268,7 +268,7 @@
         }
 
         &:nth-child(2) {
-            margin-top: 283px;
+            margin-top: 292px;
 
             @include breakpoints(xl) {
                 margin-top: 180px;
@@ -291,7 +291,7 @@
         &:nth-child(3) {
             margin-left: 10px;
             padding: 3px 2px 2px 4px;
-            margin-top: 313px;
+            margin-top: 323px;
             clip-path: polygon(
                 3.879% 5.941%,
                 3.879% 5.941%,
@@ -591,7 +591,7 @@
         }
 
         &:nth-child(1) {
-            margin-top: 355px;
+            margin-top: 362px;
 
             @include breakpoints(xl) {
                 margin-top: 280px;
@@ -609,7 +609,7 @@
         }
 
         &:nth-child(2) {
-            margin-top: 290px;
+            margin-top: 296px;
 
             @include breakpoints(xl) {
                 margin-top: 190px;
@@ -630,7 +630,7 @@
         }
 
         &:nth-child(3) {
-            margin-top: 460px;
+            margin-top: 472px;
 
             @include breakpoints(xl) {
                 margin-top: 310px;

@@ -1,5 +1,8 @@
 .link {
     font-weight: 500;
+    transition:
+        background,
+        color 0.5s ease-in-out;
 
     @include breakpoints(md) {
         font-size: 20px;
@@ -54,7 +57,9 @@
 
         &-white {
             border: 2px solid $mainColorText;
-            transition: all 0.5s ease-in-out;
+            transition:
+                color,
+                background-color 0.5s ease-in-out;
 
             &:hover {
                 background: $mainColorText;
@@ -74,7 +79,7 @@
             position: relative;
             padding: 16px 42px;
             background: $headerButtonGradient;
-            transition: all 0.5s ease-in-out;
+            transition: background-color 0.5s ease-in-out;
             overflow: hidden;
 
             &:after {

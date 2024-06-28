@@ -1,6 +1,6 @@
 .benefits {
     &__content {
-        width: 85%;
+        width: 87%;
         margin: 180px auto 0;
 
         @include breakpoints(xl) {
@@ -27,7 +27,7 @@
         }
 
         &:nth-child(2) {
-            margin-top: 120px;
+            margin-top: 113px;
             flex-direction: row-reverse;
 
             @include breakpoints(xl) {
@@ -48,7 +48,7 @@
         }
 
         &:nth-child(3) {
-            margin-top: 108px;
+            margin-top: 110px;
 
             @include breakpoints(xl) {
                 margin-top: 50px;
@@ -68,7 +68,7 @@
         position: relative;
         overflow: hidden;
         width: 51%;
-        max-height: 785px;
+        max-height: 800px;
         z-index: -2;
 
         @include breakpoints(sm) {
@@ -78,7 +78,7 @@
 
     &__img {
         position: relative;
-        max-width: 105%;
+        max-width: 104%;
 
         @include breakpoints(sm) {
             left: -3%;
@@ -102,8 +102,8 @@
 
         &-marketplace {
             position: relative;
-            max-width: 98%;
-            left: 5px;
+            max-width: 97%;
+            left: 15px;
 
             @include breakpoints(sm) {
                 left: -3%;
@@ -116,7 +116,7 @@
     &__text-block-games,
     &__text-block-marketplace {
         position: relative;
-        padding-left: 50px;
+        padding-left: 56px;
 
         @include breakpoints(md) {
             padding: 0 60px;
@@ -157,12 +157,12 @@
     }
 
     &__info-block {
-        margin-top: 96px;
+        margin-top: 100px;
         width: 49%;
         position: relative;
 
         &-games {
-            margin: 90px 0 0 50px;
+            margin: 94px 0 0 60px;
             width: 50%;
             position: relative;
 
@@ -192,7 +192,9 @@
     }
 
     &__angle,
+    &__angle-games,
     &__angle-bottom,
+    &__angle-marketplace,
     &__angle-bottom-games,
     &__angle-bottom-marketplace {
         position: absolute;
@@ -213,12 +215,22 @@
     }
 
     &__angle {
-        top: 0;
-        right: 35px;
+        top: -8px;
+        right: 40px;
 
         @include breakpoints(sm) {
             top: -1%;
             right: -2%;
+        }
+
+        &-games {
+            top: -3px;
+            right: 34px;
+        }
+
+        &-marketplace {
+            top: -3px;
+            right: 44px;
         }
 
         &-bottom {
@@ -230,7 +242,7 @@
 
             &-games {
                 right: 91%;
-                top: 102%;
+                top: 104%;
 
                 @include breakpoints(sm) {
                     top: 86%;
@@ -239,8 +251,8 @@
             }
 
             &-marketplace {
-                right: 90%;
-                top: 102%;
+                right: 89%;
+                top: 103%;
 
                 @include breakpoints(sm) {
                     top: 85%;
@@ -251,7 +263,7 @@
 
     &__line {
         margin: 52px 0 0 7px;
-        width: 57%;
+        width: 56%;
         height: 23px;
         border-bottom: 2px solid $mainColorText;
         border-top: 2px dashed $mainColorText;
@@ -266,7 +278,7 @@
     &__vertical-text,
     &__vertical-text-game,
     &__vertical-text-marketplace {
-        margin: 0 0 0 9px;
+        margin: 0 0 0 6px;
         writing-mode: vertical-rl;
         font-size: 19px;
         font-weight: 400;
@@ -302,7 +314,7 @@
     &__title-games {
         width: 93%;
         font-size: 83px;
-        letter-spacing: -0.02em;
+        letter-spacing: -0.01em;
 
         @include breakpoints(xl) {
             font-size: 60px;
@@ -342,7 +354,7 @@
     &__bottom-block-games,
     &__bottom-block-marketplace {
         display: flex;
-        padding-top: 57px;
+        padding: 61px 0 0 5px;
 
         @include breakpoints(sm) {
             width: 100%;
@@ -356,7 +368,7 @@
 
     &__bottom-block {
         &-games {
-            padding-top: 63px;
+            padding-top: 73px;
 
             @include breakpoints(sm) {
                 padding-top: 142px;
@@ -368,7 +380,7 @@
         }
 
         &-marketplace {
-            padding-top: 63px;
+            padding-top: 67px;
 
             @include breakpoints(sm) {
                 padding-top: 135px;
@@ -405,6 +417,7 @@
         }
 
         &-marketplace {
+            padding: 35px 0 0 5px;
             @include breakpoints(sm) {
                 padding-top: 57px;
             }

@@ -14,7 +14,7 @@
     &__nav {
         display: flex;
         justify-content: space-between;
-        width: 87%;
+        width: 87.3%;
         padding-left: 9px;
 
         @include breakpoints(xl) {
@@ -38,7 +38,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
-        width: 89%;
+        width: 87%;
 
         @include breakpoints(xl) {
             width: 93%;
@@ -77,7 +77,7 @@
         color: $textSupportText;
         font-size: 17px;
         font-weight: 500;
-        width: 68%;
+        width: 66%;
 
         @include breakpoints(md) {
             font-size: 14px;
@@ -95,7 +95,7 @@
     &__img {
         position: absolute;
         top: -26%;
-        left: 89.5%;
+        left: 90%;
 
         @include breakpoints(md) {
             display: none;

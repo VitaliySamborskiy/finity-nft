@@ -1,6 +1,6 @@
 .social {
     &__content {
-        margin-top: 175px;
+        margin-top: 179px;
 
         @include breakpoints(md) {
             margin-top: 100px;
@@ -27,7 +27,7 @@
 
     &__links {
         position: relative;
-        height: 362px;
+        height: 366px;
 
         @include breakpoints(sm) {
             height: 110px;

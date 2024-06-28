@@ -45,7 +45,8 @@
         @include breakpoints(md) {
             width: 100%;
             margin: 21px auto 0;
-            overflow-y: auto;
+            overflow-y: scroll;
+            scrollbar-width: none;
         }
 
         @include breakpoints(sm) {
@@ -88,7 +89,7 @@
     }
 
     &__text {
-        margin-top: 17px;
+        margin-top: 18px;
         font-size: 17px;
         font-weight: 500;
         text-align: center;
@@ -135,7 +136,7 @@
     &__green {
         background: $grant;
         box-shadow: 2px 2px 9px 0 $greenShadow;
-        height: 278px;
+        height: 288px;
 
         @include breakpoints(md) {
             height: 310px;
@@ -180,6 +181,7 @@
     }
 
     &__svg-page {
+        margin-top: 8px;
         @include breakpoints(sm) {
             margin-top: 12px;
             width: 60px;
@@ -189,7 +191,7 @@
 
     &__main-violet {
         background: $mainColorGradient;
-        height: 340px;
+        height: 349px;
         box-shadow: 2px 2px 9px 0 $pinkShadow;
 
         @include breakpoints(sm) {

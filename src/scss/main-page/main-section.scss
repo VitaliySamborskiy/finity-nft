@@ -1,7 +1,7 @@
 .main-section {
     &__content {
-        width: 81%;
-        margin: 204px auto 0;
+        width: 82%;
+        margin: 208px auto 0;
         display: flex;
         justify-content: space-between;
 
@@ -46,7 +46,7 @@
     &__title {
         font-size: 140px;
         background: $mainColorGradient;
-        letter-spacing: 2.3px;
+        letter-spacing: 3.6px;
         background-clip: text;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -66,7 +66,7 @@
     }
 
     &__title-support {
-        margin-top: 23px;
+        margin-top: 25px;
         color: $mainColorText;
         font-size: 48px;
         font-weight: 500;
@@ -92,7 +92,7 @@
 
     &__text {
         color: $textSupportText;
-        margin-top: 23px;
+        margin-top: 24px;
         font-weight: 400;
         font-size: 37px;
 
@@ -115,7 +115,7 @@
     }
 
     &__button {
-        margin-top: 40px;
+        margin-top: 43px;
 
         @include breakpoints(sm) {
             margin-top: 20px;
@@ -123,6 +123,7 @@
     }
 
     &__img-block {
+        will-change: contents;
         width: 44%;
         min-width: 570px;
 
