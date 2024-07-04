@@ -17,9 +17,6 @@
         }
     }
 
-    &__img-block {
-    }
-
     &__img {
         position: absolute;
         width: 52%;
@@ -181,9 +178,6 @@
             @include breakpoints(ssm) {
                 grid-template-columns: repeat(auto-fill, minmax(50px, 1fr));
             }
-        }
-
-        &-item {
         }
 
         &-svg {

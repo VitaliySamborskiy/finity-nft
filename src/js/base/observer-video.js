@@ -5,7 +5,8 @@ export function observerVideo() {
     const observer = new IntersectionObserver((autoplay) => {
         autoplay.forEach((entry) => {
             if (entry.isIntersecting) {
-                const video = entry.target;
+                const video = entry.target.firstChild.nextSibling;
+                console.log(video);
                 video.setAttribute("preload", "auto");
                 video.play();
             }
@@ -16,6 +17,6 @@ export function observerVideo() {
         });
     }, options);
 
-    const target = document.querySelectorAll("video");
+    const target = document.querySelectorAll(".video-block");
     target.forEach((t) => observer.observe(t));
 }

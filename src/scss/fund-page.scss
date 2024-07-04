@@ -1,9 +1,5 @@
-@import "base/reset";
-@import "base/global";
-@import "base/mixins";
-@import "base/button";
-@import "base/navigation-component";
-@import "base/select";
+@import "global/reset";
+@import "global/global";
 
 @import "base/header";
 @import "base/burger";
@@ -12,5 +8,5 @@
 
 @import "fund-page/main-page-fund";
 @import "base/ideas";
-@import "fund-page/roadmap";
+@import "fund-page/roadmape";
 @import "fund-page/application";

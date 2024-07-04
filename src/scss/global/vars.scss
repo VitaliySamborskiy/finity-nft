@@ -25,11 +25,8 @@ $headerButtonGradient: linear-gradient(136deg, #54d6ff 20%, #bf79ff 49.26%, #f46
 $faqMainPage: linear-gradient(325deg, #54d6ff 10%, #a57aff 50.78%, #fb84ff 80%);
 $faqMainColor: linear-gradient(144deg, #ffb78f 0%, #db73ff 100%);
 $borderInputGradient: linear-gradient(97deg, #fc84ff 0%, #54d1fa 100%);
-$gradientFondButton: linear-gradient(
-    144deg,
-    rgba(252, 132, 255, 1) 15%,
-    rgba(84, 209, 250, 1) 100%
-);
-$pinkShadow: #91009d;
+$gradientFondButton: linear-gradient(144deg, #fc84ff 15%, #54d1fa 100%);
 $backgroundTokenBorder: linear-gradient(216deg, #ffb78f 0%, #db73ff 100%);
 $addressGradient: linear-gradient(163deg, #fc84ff 0%, #54d1fa 100%);
+
+$pinkShadow: #91009d;

@@ -1,7 +1,7 @@
-import { burgerFunction } from "./base/header.js";
-import { dropDown } from "./base/select.js";
+import { burgerFunction } from "@jsBase/header.js";
+import { dropDown } from "@jsBase/select.js";
 
-document.addEventListener("DOMContentLoaded", async function () {
+document.addEventListener("DOMContentLoaded", function () {
     burgerFunction();
     dropDown();
 });

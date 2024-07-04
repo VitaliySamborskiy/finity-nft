@@ -1,29 +1,28 @@
-// vite.config.ts
 import { resolve } from "path";
+import { fileURLToPath } from "url";
 import { defineConfig } from "vite";
 import Inspect from "vite-plugin-inspect";
 import injectHTML from "vite-plugin-html-inject";
-// import { ViteImageOptimizer } from "vite-plugin-image-optimizer";
 
 export default defineConfig({
-    plugins: [
-        [Inspect()],
-        [injectHTML()],
-        // [
-        //     ViteImageOptimizer({
-        //         jpg: {
-        //             quality: 80,
-        //         },
-        //         png: {
-        //             quality: 75,
-        //         },
-        //         webp: {
-        //             lossless: false,
-        //         },
-        //     }),
-        // ],
-    ],
+    plugins: [[Inspect()], [injectHTML()]],
     base: "/finity-nft/",
+    resolve: {
+        alias: [
+            {
+                find: "@jsBase",
+                replacement: fileURLToPath(new URL("./src/js/base", import.meta.url)),
+            },
+            {
+                find: "@jsToken",
+                replacement: fileURLToPath(new URL("./src/js/token-page", import.meta.url)),
+            },
+            {
+                find: "@jsMain",
+                replacement: fileURLToPath(new URL("./src/js/main-page", import.meta.url)),
+            },
+        ],
+    },
     build: {
         rollupOptions: {
             input: {
