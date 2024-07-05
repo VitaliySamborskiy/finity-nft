@@ -1,5 +1,4 @@
 import { resolve } from "path";
-import { fileURLToPath } from "url";
 import { defineConfig } from "vite";
 import Inspect from "vite-plugin-inspect";
 import injectHTML from "vite-plugin-html-inject";
@@ -8,20 +7,11 @@ export default defineConfig({
     plugins: [[Inspect()], [injectHTML()]],
     base: "/finity-nft/",
     resolve: {
-        alias: [
-            {
-                find: "@jsBase",
-                replacement: fileURLToPath(new URL("./src/js/base", import.meta.url)),
-            },
-            {
-                find: "@jsToken",
-                replacement: fileURLToPath(new URL("./src/js/token-page", import.meta.url)),
-            },
-            {
-                find: "@jsMain",
-                replacement: fileURLToPath(new URL("./src/js/main-page", import.meta.url)),
-            },
-        ],
+        alias: {
+            "@jsBase": resolve(__dirname, "./src/js/base"),
+            "@jsToken": resolve(__dirname, "./src/js/token-page"),
+            "@jsMain": resolve(__dirname, "./src/js/main-page"),
+        },
     },
     build: {
         rollupOptions: {

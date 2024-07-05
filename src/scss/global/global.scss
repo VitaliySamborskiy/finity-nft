@@ -1,64 +1,5 @@
 @import "vars";
 
-// fonts
-
-$mainFonts: "Montserrat";
-$supportFonts: "Chakra Petch";
-
-@font-face {
-    font-display: swap;
-    font-family: $mainFonts;
-    font-weight: 400;
-    src:
-        url("/src/assets/fonts/montserrat-v26-latin-regular.woff2") format("woff2"),
-        url("/src/assets/fonts/montserrat-v26-latin-regular.woff") format("woff");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: $mainFonts;
-    font-weight: 500;
-    src:
-        url("/src/assets/fonts/montserrat-v26-latin-500.woff2") format("woff2"),
-        url("/src/assets/fonts/montserrat-v26-latin-500.woff") format("woff");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: $mainFonts;
-    font-weight: 600;
-    src:
-        url("/src/assets/fonts/montserrat-v26-latin-600.woff2") format("woff2"),
-        url("/src/assets/fonts/montserrat-v26-latin-600.woff") format("woff");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: $mainFonts;
-    font-weight: 700;
-    src:
-        url("/src/assets/fonts/montserrat-v26-latin-700.woff2") format("woff2"),
-        url("/src/assets/fonts/montserrat-v26-latin-700.woff") format("woff");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: $supportFonts;
-    font-weight: 600;
-    src:
-        url("/src/assets/fonts/chakra-petch-v11-latin-600.woff2") format("woff2"),
-        url("/src/assets/fonts/chakra-petch-v11-latin-600.woff") format("woff");
-}
-
-@font-face {
-    font-display: swap;
-    font-family: $supportFonts;
-    font-weight: 700;
-    src:
-        url("/src/assets/fonts/chakra-petch-v11-latin-700.woff2") format("woff2"),
-        url("/src/assets/fonts/chakra-petch-v11-latin-700.woff") format("woff");
-}
-
 *,
 *::before,
 *::after {
@@ -128,27 +69,6 @@ button {
 
 .main {
     flex: 1 1 auto;
-}
-
-//mixin-breakpoints
-
-$breakpoints: (
-    xxl: 1920px,
-    xl: 1440px,
-    md: 1280px,
-    sm: 768px,
-    ssm: 374px,
-);
-
-@mixin breakpoints($breakpoint) {
-    @if map-has-key($breakpoints, $breakpoint) {
-        $breakpoint-value: map-get($breakpoints, $breakpoint);
-        @media (max-width: $breakpoint-value) {
-            @content;
-        }
-    } @else {
-        @warn 'Invalid breakpoint: #{$breakpoint}.';
-    }
 }
 
 [class*="__container"] {

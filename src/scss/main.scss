@@ -1,10 +1,6 @@
-@import "global/reset";
-@import "global/global";
+@import "variable";
 
-@import "base/header";
-@import "base/burger";
 @import "main-page/main-section";
-@import "base/ideas";
 @import "main-page/benefits-button";
 @import "main-page/benefits-section";
 @import "main-page/team-card";
@@ -13,4 +9,3 @@
 @import "base/faq-section";
 @import "main-page/social-section";
 @import "base/contact-us";
-@import "base/footer";
